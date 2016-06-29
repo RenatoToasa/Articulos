@@ -384,23 +384,9 @@ Los autores M.
  Ruiz Olaya, R.
  M.
  Gutiérrez Salamanca, realizan un esquema en Tele-fisioterapia para personas
- con trastornos motores del miembro superior
-\begin_inset CommandInset citation
-LatexCommand cite
-key "cuervo2013biomechanical"
-
-\end_inset
-
-, en cambio los autores García-Molina A, Gómez A, Rodríguez P, Sánchez-Carrión
- R, realizan un Programa clínico de telerrehabilitación cognitiva en el
- traumatismo craneoencefálico
-\begin_inset CommandInset citation
-LatexCommand cite
-key "creaneoencefalico"
-
-\end_inset
-
-.
+ con trastornos motores del miembro superior, en cambio los autores García-Molin
+a A, Gómez A, Rodríguez P, Sánchez-Carrión R, realizan un Programa clínico
+ de telerrehabilitación cognitiva en el traumatismo craneoencefálico.
 \end_layout
 
 \begin_layout Standard
@@ -812,15 +798,8 @@ n, este cliente web es un cliente websocket, se utilizó html y css para
  La aplicación cliente, es decir el websocket cliente está escrito en javascript
  y jquery, en esta parte también se utiliza una librería que contiene los
  métodos para conectarse a un websocket server.
- Esta librería se llama fancywebsocket
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fancywebsocket"
-
-\end_inset
-
-, de la misma manera tiene los métodos open, message, close, el esquema
- se muestra en la figura 8.
+ Esta librería se llama fancywebsocket, de la misma manera tiene los métodos
+ open, message, close, el esquema se muestra en la figura 8.
 \end_layout
 
 \begin_layout Standard

@@ -1,0 +1,43 @@
+% Encoding: UTF-8
+
+@Article{rehabilitacion,
+  author   = {Michael Pramuka and Linda van Roosmalen},
+  title    = {Telerehabilitation Technologies: Accessibility and Usability},
+  journal  = {International Journal of Telerehabilitation},
+  year     = {2009},
+  volume   = {1},
+  number   = {1},
+  pages    = {85--98},
+  abstract = {In the fields of telehealth and telemedicine, phone and/or video technologies are key to the successful provision of services such as remote monitoring and visits. How do these technologies affect service accessibility, effectiveness, quality, and usefulness when applied to rehabilitation services in the field of telerehabilitation? To answer this question, we provide a overview of the complex network of available technologies and discuss how they link to rehabilitation applications, services, and practices as well as to the telerehabilitation end-user. This white paper will first present the numerous professional considerations that shape the use of technology in telerehabilitation service and set it somewhat apart from telemedicine. It will then provide an overview of concepts essential to usability analysis; present a summary of various telerehabilitation technologies and their strengths and limitations, and consider how the technologies interface with end users’ clinical needs for service accessibility, effectiveness, quality, and usefulness. The paper will highlight a conceptual framework (including task analyses and usability issues) that underlies a functional match between telerehabilitation technologies, clinical applications, and end-user capabilities for telerehabilitation purposes. Finally, we will discuss pragmatic issues related to user integration of telerehabilitation technology versus traditional face-to-face approaches. 
+
+Key Words: Remote, Technology, Usability, Accessibility, Decision Factors, Decision Support},
+  doi      = {10.5195/ijt.2009.6016},
+  issn     = {1945-2020},
+  url      = {http://telerehab.pitt.edu/ojs/index.php/Telerehab/article/view/6016},
+}
+
+@Article{falcon,
+  author  = {Pinto Salamanca, María Luisa; Sabater Navarro, José María; Sofrony Esmeral},
+  title   = {Análisis de la detección de colisiones en un entorno virtual para aplicaciones hápticas de asistencia quirúrgica},
+  journal = Ingeniería #e #Investigación,
+  year    = {2011},
+  volume  = {31},
+  pages   = {204-212},
+}
+
+@Electronic{3d,
+  author = {Jimena Trivino},
+  year   = {2012},
+  url    = {https://prezi.com/ykbfoua8ukra/modelado-2d-3d/},
+}
+
+@Article{streaming,
+  author  = {Huavel, Esequiel Zavala and Nieto, Lita Soto and Ulloa, Luis Mart{\'\i}nez and Urco, Henry Vivanco},
+  title   = {Streaming de video en vivo por internet},
+  journal = {Electr{\'o}nica-UNMSM},
+  year    = {2011},
+  number  = {27},
+  pages   = {36--43},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

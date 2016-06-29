@@ -1,0 +1,1503 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\end_preamble
+\options conference
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template LyX file for conference articles of conferences organized
+ by the Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE journal articles, see the template file 
+\emph on
+IEEEtran-Journal.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+PLATAFORMA DE COMUNICACIÓN EN TIEMPO REAL PARA PLATAFORMAS MÓVILES
+\end_layout
+
+\begin_layout Author
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the standard way: 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status collapsed
+
+\begin_layout Plain Layout
+Your
+\begin_inset space ~
+\end_inset
+
+Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status collapsed
+
+\begin_layout Plain Layout
+School of Electrical and
+\begin_inset Newline newline
+\end_inset
+
+Computer Engineering
+\begin_inset Newline newline
+\end_inset
+
+Institute of Technology
+\begin_inset Newline newline
+\end_inset
+
+99999 Testcity
+\begin_inset Newline newline
+\end_inset
+
+Email: test@test.tes
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status collapsed
+
+\begin_layout Plain Layout
+Second
+\begin_inset space ~
+\end_inset
+
+Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status collapsed
+
+\begin_layout Plain Layout
+Ecole Superieure
+\begin_inset Newline newline
+\end_inset
+
+Nantes, France
+\begin_inset Newline newline
+\end_inset
+
+Email: second@second.fr
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status collapsed
+
+\begin_layout Plain Layout
+Third
+\begin_inset space ~
+\end_inset
+
+Name
+\begin_inset Newline newline
+\end_inset
+
+and Fourth
+\begin_inset space ~
+\end_inset
+
+Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status collapsed
+
+\begin_layout Plain Layout
+Star Academy
+\begin_inset Newline newline
+\end_inset
+
+San Francisco, California 99999-9999
+\begin_inset Newline newline
+\end_inset
+
+Telephone: (800) 555--5555
+\begin_inset Newline newline
+\end_inset
+
+Fax: (888) 555--5555
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+En este trabajo se describe como desarrollar un servidor que brinde un canal
+ de comunicación en tiempo real, que será utilzado para controlar plataformas
+ móviles, además de crear un cliente web que servirá como visualizador de
+ datos que esten interactuando entre el cliente y servidor.
+ Se menciona el protocolo de comunicación a utilizar, la forma en el que
+ se va a desarrollar, el esquema del cliente, esquema del servidor y resultados
+ obtenidos.
+\end_layout
+
+\begin_layout Keywords
+Protocolos, websocket, Json, cliente, servidor
+\end_layout
+
+\begin_layout Section
+INTRODUCCIÓN
+\end_layout
+
+\begin_layout Standard
+La comunicación en tiempo real entre varios dispositivos móviles es una
+ necesidad que va creciendo constantemente al realizar tele operación entre
+ plataformas móviles, debido a que en la comunicación se va a minimizar
+ la pérdida de datos, fallos de conexión, tiempo de respuesta entre cliente
+ y servidor, comunicación full-dúplex.
+\begin_inset CommandInset citation
+LatexCommand citet
+key "IEEEexample:beebe_archive"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename comunicacion full.png
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comunicación Plataforma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El autor Alan FT Winfield realiza la comunicación entre robots utilizando
+ el protocolo de comunicación TCP-IP
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Winfield2000"
+
+\end_inset
+
+, que no es un protocolo muy seguro ya que podria haber pérdida de datos
+ y las plataformas móviles no trabajarian de forma correcta.
+ Mientras que los autores H.
+ G.
+ Nguyen, N.
+ Pezeshkian, M.
+ Raymond, A.
+ Gupta, utilizan radiofrecuencia para la comunicación
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Autonomous"
+
+\end_inset
+
+, teniendo como inconveniente las interferencias que se producen debido
+ a que hay varias señales dentro de la misma frecuencia.
+ 
+\end_layout
+
+\begin_layout Standard
+Se propone utilizar en la comunicación en tiempo real el protocolo de comunicaci
+ón denominado websocket, debido a que es una tecnología que proporciona
+ un canal de comunicación bidireccional y fullduplex.
+ Además utilizar el formato Json para el empaquetamiento de los datos de
+ los datos, de esta manera tener el control absoluto de los datos que llegan
+ o se envian en el servidor.
+\end_layout
+
+\begin_layout Standard
+Como resultado de esta investigación se obtendrá un servidor web que brindará
+ un canal de comunicación estable que permitirá la comunicación fullduplex
+ entre los clientes y el servidor, además de un cliente web que servira
+ para mostrar los datos que se esten enviando en tiempo real.
+ Logrando con esto la comunicación bidireccional de varios dispositivos
+ moviles que esten conectados, enviando y recibiendo datos del servidor.
+\end_layout
+
+\begin_layout Standard
+Es presente trabajo esta estructurado de la siguiente manera: en la sección
+ 1 Introducción, la sección 2 se realiza la selección del protolo de comunicació
+n a utilizar, en la sección 3 se detalla un análisis previo al desarrollo
+ del cliente y servidor, en la sección 4 se muestra como se desarrollo el
+ servidor que utiliza websocket para el canal de comunicación, en la secion
+ 5 el desarrollo del cliente websocket, en la sección 6 los resultados experimen
+tales y finalmente en la sección 7 las conlcusiones.
+ 
+\end_layout
+
+\begin_layout Section
+PROTOCOLOS DE COMUNICACIÓN 
+\end_layout
+
+\begin_layout Standard
+En el mundo de la informática se conoce bajo el nombre de protocolo, al
+ lenguaje que es un conjunto de reglas formales, que permiten la comunicación
+ de distintas computadoras entre sí.
+ Dentro de las distintas redes, como Internet, existen numerosos tipos de
+ protocolos.
+ Aquí forman parte los distintos protocolos y modelos de redes que proveen
+ servicios de comunicación en sistemas distribuidos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "protocolos"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Comunicación Cliente - Servidor (Polling)
+\end_layout
+
+\begin_layout Standard
+El servidor generalmente recibe las peticiones de los clientes, las procesa
+ y envía posteriormente los resultados a través de la conexión que existe
+ entre ellos.
+ La comunicación entre el cliente y el servidor es de tipo Polling (preguntar
+ y recibir) y genera un esquema Half Duplex, similar a un sistema PTT (Push
+ To Talk) donde ambas partes pueden enviar y recibir mensajes pero solo
+ una a la vez, la figura 2 muesra el esquema de funcionamiento de Polling
+\begin_inset CommandInset citation
+LatexCommand cite
+key "polling"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquemaPolling.jpg
+	width 6cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema Polling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este gráfico permite comprender la mecánica de asincronismo de estas tecnologías.
+ En primer lugar el cliente (browser) envía una petición, el servidor la
+ recibe, procesa y envía la respuesta que el navegador muestra en pantalla.
+ Este esquema de trabajo hace que el cliente siempre tenga que “pedir” para
+ recibir la información, de ahí que esta técnica se denomina Polling.
+ Si el lado cliente no solicita información entonces esta no será enviada
+ y esto acarrea algunos problemas
+\end_layout
+
+\begin_layout Subsection
+Rest
+\end_layout
+
+\begin_layout Standard
+Es un estilo de arquitectura de software para sistemas hipermedias distribuidos
+ tales como la Web.
+ Cabe destacar que REST no es un estándar, ya que es tan solo un estilo
+ de arquitectura.
+ Aunque REST no es un estándar, está basado en estándares
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rest"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+HTTP 
+\end_layout
+
+\begin_layout Itemize
+URL
+\end_layout
+
+\begin_layout Itemize
+Representación de los recursos XML, HTML 
+\end_layout
+
+\begin_layout Standard
+Rest dicta que los mensajes HTTP deberían ser tan descriptivos como sea
+ posible.
+ Esto hace posible que los intermediarios interpreten los mensajes y ejecuten
+ servicios en nombre del usuario.
+ Uno de los modos que HTTP logra esto es por medio del uso de varios métodos
+ estándares, muchos encabezamientos y un mecanismo de direccionamiento.
+ Por ejemplo, las cachés Web saben que por defecto el comando GET es cacheable
+ (ya que es side-effect-free) en cambio POST no lo es.
+ Además saben como consultar las cabeceras para controlar la caducidad de
+ la información.
+ HTTP es un protocolo sin estado y cuando se utiliza adecuadamente, es posible
+ es posible interpretar cada mensaje sin ningún conocimiento de los mensajes
+ precedentes.
+ Por ejemplo, en vez de logearse del modo que lo hace el protocolo FTP,
+ HTTP envía esta información en cada mensaje
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rest"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Los clientes envían los mensajes basados en los estándares anteriormente
+ mencionados hacia el servidor.
+ El servidor los recibe y los puede manipular reenviándolos a otro cliente
+ o almacenándolos en una base de datos, la figura 3 muestra un esquema del
+ funcionamiento de Rest al momento de envió y recepción de mensajes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rest"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquemaRest.jpg
+	width 6cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema Rest
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Websocket
+\end_layout
+
+\begin_layout Standard
+Es la tecnología que llega para resolver los problemas de comunicación que
+ plantean los esquemas anteriormente descritos.
+ De manera simple, Websockets permite comunicar el cliente y el servidor
+ a través de un canal Full Duplex bidireccional y sin tener que hacer polling
+ por parte del cliente ni acoplarse a estándares predefinidos.
+ La figura 4 muestra el funcionamiento de los websockets
+\begin_inset CommandInset citation
+LatexCommand cite
+key "websocket"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquemaWebsocket.jpg
+	width 6cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema Websocket
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Selección del protocolo
+\end_layout
+
+\begin_layout Standard
+En la tele operación de plataformas móviles se necesita una comunicación
+ fullduplex, estable y con mínimos retardos de tiempo, para eso se produce
+ a comparar los protocolos anteriormente mencionados.
+\end_layout
+
+\begin_layout Itemize
+Websocket - Polling
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename websocket-polling.jpg
+	width 6cm
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Websocket - Polling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 5 puede verse la reducción de tráfico innecesario en la red
+ gracias a que no hay que implementar polling enviando paquetes de datos
+ que solo “preguntan” al servidor si hay información para que este envíe
+ al cliente.
+ Eso sin contar los paquetes enviados por el cliente que terminan siendo
+ inútiles porque el servidor no tiene información para enviar.
+ 
+\end_layout
+
+\begin_layout Itemize
+Websocket - Rest 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename websocket-rest.jpg
+	width 6cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Websocket - Rest
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La figura 6 muestra la reducción de tiempo de respuesta al utilizar websockets
+ en la transmisión de mensajes.
+ El protocolo websocket es el más adecuado para cumplir el objetivo principal
+ de esta investigación que es lograr la comunicación bidireccional de plataforma
+s móviles.
+ 
+\end_layout
+
+\begin_layout Section
+ANÁLISIS EN PARA EL DESARROLLO DE LA PLATAFORMA DE COMUNICACIÓN
+\end_layout
+
+\begin_layout Standard
+Antes de realizer cualquier Proyecto de software es necesario realizer ciertas
+ tareas previas para el correcto desarrollo.
+\end_layout
+
+\begin_layout Subsection
+Definir forma de programación
+\end_layout
+
+\begin_layout Standard
+Existe varias formas o métodos para poder programar o desarrollar algún
+ proyecto de software, esto va a depender del funcionamiento y objetivos
+ que se vayan a cumplir en el proyecto.
+ De las más conocidas son Modelo Vista Controlador (MVC), Por Capas, Modelo
+ Vista Presentador (MVP).
+\end_layout
+
+\begin_layout Itemize
+El Modelo Vista controlador (MVC), es un patrón de arquitectura de software
+ que separa los datos y la lógica del negocio de una aplicación de la interfaz
+ de usuario y el módulo encargado de gestionar los eventos y las comunicaciones.
+ Para ello MVC propone la construcción de tres componentes distintos que
+ son el modelo, la vista y el controlador, es decir, por un lado define
+ componentes para la representación de la información, y por otro lado para
+ la interacción del usuario
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MVC"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Programación por Capas: La programación por capas es una arquitectura cliente-se
+rvidor en el que el objetivo primordial es la separación de la lógica de
+ negocios de la lógica de diseño; un ejemplo básico de esto consiste en
+ separar la capa de datos de la capa de presentación al usuario
+\begin_inset CommandInset citation
+LatexCommand cite
+key "capas"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Modelo Vista Presentador: El Patrón Modelo-Vista-Presentador (MVP) surge
+ para ayudar a realizar pruebas automáticas de la interfaz gráfica, para
+ ello la idea es codificar la interfaz de usuario lo más simple posible,
+ teniendo el menor código posible, de forma que no merezca la pena probarla.
+ En su lugar, toda la lógica de la interfaz de usuario, se hace en una clase
+ separada (que se conoce como Presentador), que no dependa en absoluto de
+ los componentes de la interfaz gráfica y que, por tanto, es más fácil de
+ realizar pruebas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MVP"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El modelo que se va a utilizar es MVC, debido a que presta los servicios
+ necesarios para poder cumplir los objetivos trazados en el proyecto.
+\end_layout
+
+\begin_layout Subsection
+Definir forma de programación
+\end_layout
+
+\begin_layout Standard
+El momento de desarrollar algún proyecto de software es necesario definir
+ que tecnologías se va a utilizar, las mismas se detallan a continuación:
+\end_layout
+
+\begin_layout Itemize
+Lenguajes de Programación: Al tratarse de aplicaciones y servicios web tanto
+ para el servidor como para los clientes, se decidió utilizar PHP para el
+ lado del servidor, y javascript, html, para el lado del cliente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "php-javascript"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Tecnologías: Al tratarse de una aplicación web MVC, lo más recomendable
+ es utilizar el framework Codeigniter, que es un framework PHP para la creación
+ rápida de aplicaciones web
+\begin_inset CommandInset citation
+LatexCommand cite
+key "codeigniter"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+DESARROLLO DEL SERVIDOR
+\end_layout
+
+\begin_layout Standard
+El servidor web está desarrollado en php, utilizando la librería web PHPwebsocke
+t.php, que es una librería que contiene los métodos, funciones y variables
+ que utiliza el protocolo websocket para poder crear el canal de comunicación
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PHPwebsocket"
+
+\end_inset
+
+.
+ La figura 7, muestra cómo se realiza el proceso de funcionamiento del servidor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquema-servidor.jpg
+	width 6cm
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema del Servidor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El funcionamiento de forma detallada es el siguiente:
+\end_layout
+
+\begin_layout Itemize
+Crear una instancia de la librería PHPWebSocket, para poder utilizar los
+ métodos que contiene esta librería.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket= new PHPWebSocket();
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Enlaza la función wsOnMessage con la librería PHPWebsocket mediante “message”,
+ permitiendo utilizar las variables y funciones referentes a los mensajes
+ que se están enviando.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('message', 'wsOnMessage');
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Enlaza wsOnOpen con la librería PHPWebsocker mediante “open”.
+ Permitiendo utilizar las funciones y variables que permiten abrir la comunicaci
+ón.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('open', 'wsOnOpen'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Enlaza wsOnClose con la librería PHPWebsocker mediante “close”.
+ Permitiendo utilizar las funciones y variables que permiten cerrar la comunicac
+ión.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('close', 'wsOnClose'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Inicializa el socket en la ip y puerto especificados.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+return $this->socket->wsStartServer ('192.168.1.102',9300); 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+DESARROLLO DEL CLIENTE
+\end_layout
+
+\begin_layout Standard
+Se creó una página web que mostrará los datos enviados por los clientes,
+ esta página web también es un cliente más con la diferencia que es un cliente
+ de visualización de datos, se utilizó html y css para la creación de la
+ misma.
+ La aplicación cliente, es decir el websocket cliente está escrito en javascript
+ y jquery, en esta parte también se utiliza una librería que contiene los
+ métodos para conectarse a un websocket server
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fancywebsocket"
+
+\end_inset
+
+.
+ Esta librería se llama fancywebsocket, de la misma manera tiene los métodos
+ open, message, close, el esquema se muestra en la figura 8.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquema-cliente.jpg
+	width 6cm
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema del Cliente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El funcionamiento es el siguiente: 
+\end_layout
+
+\begin_layout Itemize
+Crear una instancia de la librería fancywebsocket, especificando la dirección
+ Ip y el puerto al que se debe conectar.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server = new FancyWebSocket('ws://192.168.1.102:9300'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Abrir la conexión para poder conectarse al servidor.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('open', function(){………… }); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Envia el mensaje hacia el servidor enpaquetado en formato json.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.send('message', JSON.stringify(mensaje) ); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Cierra la conexión con el servidor.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('close', function( data ) -
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Obtiene mensajes de los clientes para poder mostrarlos en pantalla.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('message', function( payload ); var res = jQuery.parseJSON(payload);
+ console.log(res); 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+RESULTADOS
+\end_layout
+
+\begin_layout Subsection
+Servidor
+\end_layout
+
+\begin_layout Standard
+Se tiene un servidor que cuando inicia el websocket esta en espera de los
+ clientes que se van a conectar y brinda la comunicación full-duplex, La
+ figura 9 describe el servidor.
+ Se inicia atraves de línea de comandos en terminal linux en nuestro caso,
+ para esto se hace lo siguiente: 
+\end_layout
+
+\begin_layout Itemize
+Ubicarse en la dirección donde estén los archivos y escribir : /var/www/html/Tel
+eoperacion-Bilateral/.
+\end_layout
+
+\begin_layout Itemize
+Escribir el comando para iniciar el servidor websocker, En la siguiente
+ figura se detalla los servicios que se inician.
+ php index.php Administrador/iniciar_socket.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename comunicacion-clientes-servidor.jpg
+	width 6cm
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comunicación Clientes - Servidor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cliente
+\end_layout
+
+\begin_layout Standard
+En cuanto al cliente web, Conectar el cliente abriendo un navegador web
+ especificando la dirección del servidor, en este caso se trabaja en un
+ servidor local, se muestra en la figura 10 http://127.0.0.1Teleoperacion-Bilateral
+/Administrador/g 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename clienteWeb.jpg
+	width 7cm
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cliente Web
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comunicación Bidireccional
+\end_layout
+
+\begin_layout Itemize
+La primera conexión permite identificar al servidor que cliente se conecta,
+ como se puede ver en la figura 11.
+\end_layout
+
+\begin_layout Itemize
+El cliente envia el mensaje de la siguiente forma: {"cadena":"c”}
+\end_layout
+
+\begin_layout Itemize
+Desde el cliente se envian los datos en formato JSON {"cadena":"cadena”,”cadena”
+:”cadena”} 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename identificacion.jpg
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Identificación de clientes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Los mensajes llegan al servidor identificando {"cadena":"cadena”,”cadena”:”caden
+a”} 
+\end_layout
+
+\begin_layout Itemize
+El re-direccionamiento de los mensajes va a variar dependiendo de los datos
+ que llegue en la cadena json en el campo origen y destino, como se observa
+ en la figura 12.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename redireccionamieto.jpg
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Redireccionamiento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CONCLUSIONES
+\end_layout
+
+\begin_layout Itemize
+Se utilizó el protocolod de comnicación webocket, debido a que brinda una
+ cumunicación estable, fullduplex y tiempo de respuesta mínimo.
+ 
+\end_layout
+
+\begin_layout Itemize
+El framework codeigniter ofrece un modelo vista controlador, de modo que
+ facilitó la programación de las aplicaciones con las que se está trabajando.
+ 
+\end_layout
+
+\begin_layout Itemize
+Es necesario empaquetar los datos en formato Json para poder utilizar cada
+ campo de la cadena que se crea, permitiendo tener el control de lo que
+ entra y sale del servidor.
+ 
+\end_layout
+
+\begin_layout Section*
+Acknowlegment
+\end_layout
+
+\begin_layout Standard
+bla bla
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remember though that your final submission is supposed to have all the bibliogra
+phy entries embedded in the LaTeX-file.
+ This means you eventually have to copy the .bbl file into the latex file
+ and remove the bibtex lines.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "IEEEabrv,IEEEexample,../Websocket"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Biography
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "1in"
+special "none"
+height "1.25in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+Replace this box by an image with a width of 1
+\begin_inset space \thinspace{}
+\end_inset
+
+in and a height of 1.25
+\begin_inset space \thinspace{}
+\end_inset
+
+in!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Your Name
+\end_layout
+
+\end_inset
+
+ All about you and the what your interests are.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Biography without photo
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Coauthor
+\end_layout
+
+\end_inset
+
+Same again for the co-author, but without photo
+\end_layout
+
+\end_body
+\end_document

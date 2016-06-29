@@ -1,0 +1,1253 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\end_preamble
+\options conference
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template LyX file for conference articles of conferences organized
+ by the Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE journal articles, see the template file 
+\emph on
+IEEEtran-Journal.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+PLATAFORMA WEB DE COMUNICACIÓN EN TIEMPO REAL PARA TELE-REHABILITACIÓN
+\end_layout
+
+\begin_layout Author
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the standard way: 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status collapsed
+
+\begin_layout Plain Layout
+Your
+\begin_inset space ~
+\end_inset
+
+Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status collapsed
+
+\begin_layout Plain Layout
+School of Electrical and
+\begin_inset Newline newline
+\end_inset
+
+Computer Engineering
+\begin_inset Newline newline
+\end_inset
+
+Institute of Technology
+\begin_inset Newline newline
+\end_inset
+
+99999 Testcity
+\begin_inset Newline newline
+\end_inset
+
+Email: test@test.tes
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status collapsed
+
+\begin_layout Plain Layout
+Second
+\begin_inset space ~
+\end_inset
+
+Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status collapsed
+
+\begin_layout Plain Layout
+Ecole Superieure
+\begin_inset Newline newline
+\end_inset
+
+Nantes, France
+\begin_inset Newline newline
+\end_inset
+
+Email: second@second.fr
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status collapsed
+
+\begin_layout Plain Layout
+Third
+\begin_inset space ~
+\end_inset
+
+Name
+\begin_inset Newline newline
+\end_inset
+
+and Fourth
+\begin_inset space ~
+\end_inset
+
+Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status collapsed
+
+\begin_layout Plain Layout
+Star Academy
+\begin_inset Newline newline
+\end_inset
+
+San Francisco, California 99999-9999
+\begin_inset Newline newline
+\end_inset
+
+Telephone: (800) 555--5555
+\begin_inset Newline newline
+\end_inset
+
+Fax: (888) 555--5555
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+En este trabajo se describe como desarrollar una plataforma de comunicación
+ en tiempo real enfocada en tele-rehabilitación, detallando le protocolo
+ de comunicación a utilizar, desarrollando una animación 3d y mediante una
+ camará transmitir el streaming del paciente que será visualizada en una
+ página web y finalmente capturando los movimientos de la persona que este
+ realizando rehabilitación , esto mediante con un dispositivo segun las
+ necesidades del paciente.
+\end_layout
+
+\begin_layout Keywords
+Tele-Rehabilitación, 3d, Protocolos, websocket, Json, cliente, servidor
+\end_layout
+
+\begin_layout Section
+INTRODUCCIÓN
+\end_layout
+
+\begin_layout Standard
+La tele-rehabilitación es la aplicación de las tecnologías de la información
+ y las comunicaciones (TICs) para poder realizar acciones de rehabilitación
+ a distancia, desarrollada desde disciplinas como la Telesalud, la Telemedicina
+ y la Teleasistencia
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rehabilitacion"
+
+\end_inset
+
+ .
+ La telerehabilitación permite, entre otras cosas, minimizar los desplazamientos
+ de pacientes y profesionales en rehabilitación, lo que conlleva a una mejora
+ en las condiciones de atención para pacientes que se encuentran en zonas
+ rurales o zonas de difícil acceso, como también la de los pacientes que
+ por su condición no pueden movilizarse en áreas urbanas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename general.jpg
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema de la Plataforma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los autores M.
+ Callejas Cuervo, A.
+ F.
+ Ruiz Olaya, R.
+ M.
+ Gutiérrez Salamanca, realizan un esquema en Tele-fisioterapia para personas
+ con trastornos motores del miembro superior, en cambio los autores García-Molin
+a A, Gómez A, Rodríguez P, Sánchez-Carrión R, realizan un Programa clínico
+ de telerrehabilitación cognitiva en el traumatismo craneoencefálico.
+\end_layout
+
+\begin_layout Standard
+El trabajo que genera este artículo muestra el uso de las TICs para implementar
+ un modelo de telerehabilitación del brazo, para ser mas específicos de
+ los daños que se ocacionan en las muñecas de la mano, permitiendo asegurar
+ la transferencia de información entre los profesionales de la rehabilitación
+ y las personas que necesiten rehabilitación.
+ 
+\end_layout
+
+\begin_layout Standard
+Este trabajo se encuantra dividido de la siguiente manera, la sección 1
+ describe el dispositivo de retroalimentación que se va a utilizar, la sección
+ 2 detalla un modelo 3D de la mano, en la sección 3 se muestra el desarrollo
+ plataforma de comunicación, la sección 4 muestra la implementación de streaming
+ en tiempo real, Un visualizador de datos web en tiempo real se muestra
+ en la sección 5, en la sección 6 se muestran los resultados obtenidos y
+ finalmente en la sección 7 estan las conclusiones del presente trabajo.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Dispositivo Háptico Novint Falcon
+\end_layout
+
+\begin_layout Standard
+Háptica es un área que estudia e investiga la interacción de la modalidad
+ sensorial del tacto con un mundo virtual.
+ Las interfaces hápticas son dispositivos bidireccionales que proporcionan
+ sensaciones de fuerzas o tacto al operador a través de la misma interfaz
+ con la que envía consignas al sistema remoto; son básicamente posicionadores
+ de avanzadas prestaciones que permiten simular sensaciones táctiles gracias
+ a la realimentación de fuerzas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "falcon"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+De acuerdo a los resultados de selección de una interfaz háptica para aplicacion
+es de asistencia en telee-rehabilitación se concloye que los joysticks hápticos
+ Phantom Omni® y Novint Falcon™ son dispositivos de bajo costo con una serie
+ de características electromecánicas que permiten una interacción apropiada
+ en sistemas de teleoperación donde se requiere de ciertas habilidades manuales
+ especiales.
+\end_layout
+
+\begin_layout Standard
+Es un dispositivo con realimentación de fuerzas de configuración paralela,
+ fabricado por Novint Technologies Inc., el cual permite la interacción en
+ escenarios tridimensionales 3D.
+ El Novint HDAL SDK es el kit de desarrollo para el dispositivo Novint Falcon
+ y contiene toda la documentación y los archivos de software necesarios
+ para desarrollar aplicaciones con el dispositivo háptico desde la capa
+ de abstracción HDAL (Haptic Device Abstraction Layer)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "falcon"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename falcon.png
+	width 7cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Falcon Novint
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se captura los datos que muestre el Novint Falcon en tiempo real, y se los
+ envia en formato json hacia el servidor de internet, utilizando el protocolo
+ de comunicación websocket.
+\end_layout
+
+\begin_layout Section
+MODELO 3D
+\end_layout
+
+\begin_layout Standard
+En computación, un modelo en 3D es un "mundo conceptual en tres dimensiones".Un
+ modelo 3D puede "verse" de dos formas distintas.
+ Desde un punto de vista técnico, es un grupo de fórmulas matemáticas que
+ describen un "mundo" en tres dimensiones.Desde un punto de vista visual,
+ valga la redundancia, un modelo en 3D es un representación esquemática
+ visible a través de un conjunto de objetos, elementos y propiedades que,
+ una vez procesados, se convertirán en una imagen en 3D o una animación
+ 3d
+\begin_inset CommandInset citation
+LatexCommand cite
+key "3d"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En la actualidad debido a los avances tecnológicos, la medicina requiere
+ de ciertos adelantos que impliquen programas computacionales en línea,
+ que sean óptimos, rápidos y que manejen datos en tiempo real, para solucionar
+ los problemas que se presentan.
+\end_layout
+
+\begin_layout Standard
+El modelo 3D es desarrollado en Unity con las funciones necesarias para
+ capturar los datos que envia el falcon Novint y realizar el mismo movimiento
+ que hace la mano en tiempo real.
+ Una vez terminado el modelo se exporta en formato webGl para poder utilizarlo
+ en una página Wew.
+\end_layout
+
+\begin_layout Standard
+Al Modelo WebGl, se le añade la funcionalidad de un cliente websocket, para
+ poder transmitir los datos en tiempo real.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename mano3d.png
+	width 6cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelo 3D
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DESARROLLO DE LA PLATAFORMA DE COMUNICACIÓN
+\end_layout
+
+\begin_layout Standard
+La plataforma de comunicación está desarrollada en php, utilizando la librería
+ web PHPwebsocket.php, que es una librería que contiene los métodos, funciones
+ y variables que utiliza el protocolo websocket para poder crear el canal
+ de comunicación
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PHPwebsocket"
+
+\end_inset
+
+.
+ La figura 4, muestra cómo se realiza el proceso de funcionamiento del servidor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquema-servidor.jpg
+	width 6cm
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema del Servidor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El funcionamiento de forma detallada es el siguiente:
+\end_layout
+
+\begin_layout Itemize
+Crear una instancia de la librería PHPWebSocket, para poder utilizar los
+ métodos que contiene esta librería.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket= new PHPWebSocket();
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Enlaza la función wsOnMessage con la librería PHPWebsocket mediante “message”,
+ permitiendo utilizar las variables y funciones referentes a los mensajes
+ que se están enviando.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('message', 'wsOnMessage');
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Enlaza wsOnOpen con la librería PHPWebsocker mediante “open”.
+ Permitiendo utilizar las funciones y variables que permiten abrir la comunicaci
+ón.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('open', 'wsOnOpen'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Enlaza wsOnClose con la librería PHPWebsocker mediante “close”.
+ Permitiendo utilizar las funciones y variables que permiten cerrar la comunicac
+ión.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('close', 'wsOnClose'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Inicializa el socket en la ip y puerto especificados.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+return $this->socket->wsStartServer ('192.168.1.102',9300); 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+STREAM DE VIDEO
+\end_layout
+
+\begin_layout Standard
+El streaming se refiere a la entrega de flujos de datos, generalmente con
+ contenidos multimedia.
+ Ello trae ventajas que no son posibles utilizando procedimientos comunes
+ de descarga de ficheros.
+ Así como se realiza el streaming de contenidos estáticos, puede realizarse
+ el Streaming de contenido en vivo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "streaming"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En el presente proyecto para transmisión y recepción de video y audio se
+ utiliza en protocolo estandar Webrtc.
+\end_layout
+
+\begin_layout Standard
+WebRTC, también conocido como Web Real-Time Communications, es un proyecto
+ de código abierto – promovido por Google, Mozilla y otros – que permite
+ comunicaciones en tiempo real sin plug-ins a través de una API Javascript.
+ Facilita las aplicaciones de llamadas de voz, chat de video y compartimiento
+ de archivos entre navegadores
+\begin_inset CommandInset citation
+LatexCommand cite
+key "webrtc"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename stream.jpg
+	width 6cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Stream de video
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DESARROLLO DEL CLIENTE
+\end_layout
+
+\begin_layout Standard
+Se creó una página web que mostrará los datos enviados por los clientes,
+ esta página web también es un cliente más con la diferencia que es un cliente
+ de visualización de datos, se utilizó html y css para la creación de la
+ misma.
+ La aplicación cliente, es decir el websocket cliente está escrito en javascript
+ y jquery, en esta parte también se utiliza una librería que contiene los
+ métodos para conectarse a un websocket server.
+ Esta librería se llama fancywebsocket, de la misma manera tiene los métodos
+ open, message, close, el esquema se muestra en la figura 8.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquema-cliente.jpg
+	width 6cm
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema del Cliente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El funcionamiento es el siguiente: 
+\end_layout
+
+\begin_layout Itemize
+Crear una instancia de la librería fancywebsocket, especificando la dirección
+ Ip y el puerto al que se debe conectar.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server = new FancyWebSocket('ws://192.168.1.102:9300'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Abrir la conexión para poder conectarse al servidor.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('open', function(){………… }); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Envia el mensaje hacia el servidor enpaquetado en formato json.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.send('message', JSON.stringify(mensaje) ); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Cierra la conexión con el servidor.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('close', function( data ) -
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Obtiene mensajes de los clientes para poder mostrarlos en pantalla.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('message', function( payload ); var res = jQuery.parseJSON(payload);
+ console.log(res); 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+RESULTADOS
+\end_layout
+
+\begin_layout Subsection
+Servidor
+\end_layout
+
+\begin_layout Standard
+Se tiene un servidor que cuando inicia el websocket esta en espera de los
+ clientes que se van a conectar y brinda la comunicación full-duplex, La
+ figura 9 describe el servidor.
+ Se inicia atraves de línea de comandos en terminal linux en nuestro caso,
+ para esto se hace lo siguiente: 
+\end_layout
+
+\begin_layout Itemize
+Ubicarse en la dirección donde estén los archivos y escribir : /var/www/html/Tel
+eoperacion-Bilateral/.
+\end_layout
+
+\begin_layout Itemize
+Escribir el comando para iniciar el servidor websocker, En la siguiente
+ figura se detalla los servicios que se inician.
+ php index.php Administrador/iniciar_socket.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename comunicacion-clientes-servidor.jpg
+	width 6cm
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comunicación Clientes - Servidor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cliente
+\end_layout
+
+\begin_layout Standard
+En cuanto al cliente web, Conectar el cliente abriendo un navegador web
+ especificando la dirección del servidor, en este caso se trabaja en un
+ servidor local, se muestra en la figura 10 http://127.0.0.1Teleoperacion-Bilateral
+/Administrador/g 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename clienteWeb.jpg
+	width 7cm
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cliente Web
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comunicación Bidireccional
+\end_layout
+
+\begin_layout Itemize
+La primera conexión permite identificar al servidor que cliente se conecta,
+ como se puede ver en la figura 11.
+\end_layout
+
+\begin_layout Itemize
+El cliente envia el mensaje de la siguiente forma: {"cadena":"c”}
+\end_layout
+
+\begin_layout Itemize
+Desde el cliente se envian los datos en formato JSON {"cadena":"cadena”,”cadena”
+:”cadena”} 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename identificacion.jpg
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Identificación de clientes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Los mensajes llegan al servidor identificando {"cadena":"cadena”,”cadena”:”caden
+a”} 
+\end_layout
+
+\begin_layout Itemize
+El re-direccionamiento de los mensajes va a variar dependiendo de los datos
+ que llegue en la cadena json en el campo origen y destino, como se observa
+ en la figura 12.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename redireccionamieto.jpg
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Redireccionamiento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CONCLUSIONES
+\end_layout
+
+\begin_layout Itemize
+Se utilizó el protocolo de comunicación webocket, debido a que brinda una
+ comunicación estable, full duplex y con un tiempo de respuesta mínimo.
+ 
+\end_layout
+
+\begin_layout Itemize
+El framework codeigniter ofrece un modelo vista controlador, de modo que
+ facilitó la programación de las aplicaciones con las que se está trabajando.
+ 
+\end_layout
+
+\begin_layout Itemize
+Es necesario empaquetar los datos en formato Json para poder utilizar cada
+ campo de la cadena que se crea, permitiendo tener el control de los datos
+ que entran y salen del servidor.
+ 
+\end_layout
+
+\begin_layout Section*
+Acknowlegment
+\end_layout
+
+\begin_layout Standard
+bla bla
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remember though that your final submission is supposed to have all the bibliogra
+phy entries embedded in the LaTeX-file.
+ This means you eventually have to copy the .bbl file into the latex file
+ and remove the bibtex lines.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "tele-rehabilitacion,C:/Users/Admin/Documents/Websocket"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Biography
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "1in"
+special "none"
+height "1.25in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+Replace this box by an image with a width of 1
+\begin_inset space \thinspace{}
+\end_inset
+
+in and a height of 1.25
+\begin_inset space \thinspace{}
+\end_inset
+
+in!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Your Name
+\end_layout
+
+\end_inset
+
+ All about you and the what your interests are.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Biography without photo
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Coauthor
+\end_layout
+
+\end_inset
+
+Same again for the co-author, but without photo
+\end_layout
+
+\end_body
+\end_document

@@ -314,7 +314,8 @@ En este trabajo se describe como desarrollar una plataforma de comunicación
 \end_layout
 
 \begin_layout Keywords
-Tele-Rehabilitación, 3d, Protocolos, websocket, Json, cliente, servidor
+Tele-Rehabilitación, 3d, Protocolos, websocket, Json, cliente, servidor,
+ streaming.
 \end_layout
 
 \begin_layout Section
@@ -413,7 +414,7 @@ El trabajo que genera este artículo muestra el uso de las TICs para implementar
 \end_layout
 
 \begin_layout Standard
-Este trabajo se encuantra dividido de la siguiente manera, la sección 1
+Este trabajo se encuentra dividido de la siguiente manera, la sección 1
  describe el dispositivo de retroalimentación que se va a utilizar, la sección
  2 detalla un modelo 3D de la mano, en la sección 3 se muestra el desarrollo
  plataforma de comunicación, la sección 4 muestra la implementación de streaming
@@ -547,11 +548,13 @@ En la actualidad debido a los avances tecnológicos, la medicina requiere
 \end_layout
 
 \begin_layout Standard
-El modelo 3D es desarrollado en Unity con las funciones necesarias para
- capturar los datos que envia el falcon Novint y realizar el mismo movimiento
- que hace la mano en tiempo real.
- Una vez terminado el modelo se exporta en formato webGl para poder utilizarlo
- en una página Wew.
+El modelo 3D es desarrollado en Unity, que es una plataforma de desarrollo
+ de video juegos, se crean las funciones necesarias para capturar los datos
+ que envia el falcon Novint y funciones que permitan simular el movimiento
+ que hace la mano en el modelo 3D, todo esto en tiempo real.
+ Una vez desarrollado el modelo en unity se procede a exportar en formato
+ webGl que es un formato compatible para poder utilizarlo en una página
+ Web.
 \end_layout
 
 \begin_layout Standard
@@ -566,10 +569,6 @@ placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -1191,7 +1190,7 @@ phy entries embedded in the LaTeX-file.
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "tele-rehabilitacion,C:/Users/Admin/Documents/Websocket"
+bibfiles "tele-rehabilitacion,Websocket"
 options "IEEEtran"
 
 \end_inset

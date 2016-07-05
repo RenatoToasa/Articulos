@@ -153,7 +153,11 @@ PLATAFORMA DE COMUNICACIÓN EN TIEMPO REAL PARA PLATAFORMAS MÓVILES
 status open
 
 \begin_layout Plain Layout
-the standard way: 
+for more than 3
+\begin_inset space ~
+\end_inset
+
+affiliations use this way: 
 \end_layout
 
 \end_inset
@@ -168,6 +172,72 @@ Your
 \end_inset
 
 Name
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+, Second
+\begin_inset space ~
+\end_inset
+
+Name
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+, Third
+\begin_inset space ~
+\end_inset
+
+Name
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+, Fourth
+\begin_inset space ~
+\end_inset
+
+Name
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+ and Fifth
+\begin_inset space ~
+\end_inset
+
+Name
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -177,6 +247,15 @@ Name
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
 School of Electrical and
 \begin_inset Newline newline
 \end_inset
@@ -199,37 +278,19 @@ Email: test@test.tes
 \end_inset
 
 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-and 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Flex Author Name
-status collapsed
-
-\begin_layout Plain Layout
-Second
-\begin_inset space ~
-\end_inset
-
-Name
-\end_layout
-
-\end_inset
-
-
 \begin_inset Flex Author Affiliation
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
 Ecole Superieure
 \begin_inset Newline newline
 \end_inset
@@ -244,45 +305,19 @@ Email: second@second.fr
 \end_inset
 
 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-and 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Flex Author Name
-status collapsed
-
-\begin_layout Plain Layout
-Third
-\begin_inset space ~
-\end_inset
-
-Name
-\begin_inset Newline newline
-\end_inset
-
-and Fourth
-\begin_inset space ~
-\end_inset
-
-Name
-\end_layout
-
-\end_inset
-
-
 \begin_inset Flex Author Affiliation
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
 Star Academy
 \begin_inset Newline newline
 \end_inset
@@ -296,6 +331,33 @@ Telephone: (800) 555--5555
 \end_inset
 
 Fax: (888) 555--5555
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+
+Rückwärts GmbH
+\begin_inset Newline newline
+\end_inset
+
+Niemandsweg 73
+\begin_inset Newline newline
+\end_inset
+
+99999 Musterstadt, Germany
 \end_layout
 
 \end_inset
@@ -456,7 +518,7 @@ key "protocolos"
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Comunicación Cliente - Servidor (Polling)
 \end_layout
 
@@ -520,7 +582,7 @@ Este gráfico permite comprender la mecánica de asincronismo de estas tecnolog�
  En primer lugar el cliente (browser) envía una petición, el servidor la
  recibe, procesa y envía la respuesta que el navegador muestra en pantalla.
  Este esquema de trabajo hace que el cliente siempre tenga que “pedir” para
- recibir la información, de ahí que esta técnica se denomina Polling.
+ recibir la información.
  Si el lado cliente no solicita información entonces esta no será enviada
  y esto acarrea algunos problemas
 \end_layout
@@ -534,7 +596,7 @@ Es un estilo de arquitectura de software para sistemas hipermedias distribuidos
  tales como la Web.
  Cabe destacar que REST no es un estándar, ya que es tan solo un estilo
  de arquitectura.
- Aunque REST no es un estándar, está basado en estándares
+ Aún asi Rest está basado en estándares
 \begin_inset CommandInset citation
 LatexCommand cite
 key "rest"
@@ -568,8 +630,7 @@ Rest dicta que los mensajes HTTP deberían ser tan descriptivos como sea
  Además saben como consultar las cabeceras para controlar la caducidad de
  la información.
  HTTP es un protocolo sin estado y cuando se utiliza adecuadamente, es posible
- es posible interpretar cada mensaje sin ningún conocimiento de los mensajes
- precedentes.
+ interpretar cada mensaje sin ningún conocimiento de los mensajes precedentes.
  Por ejemplo, en vez de logearse del modo que lo hace el protocolo FTP,
  HTTP envía esta información en cada mensaje
 \begin_inset CommandInset citation
@@ -608,8 +669,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename esquemaRest.jpg
-	width 6cm
-	height 3cm
+	width 8cm
+	height 4cm
 
 \end_inset
 
@@ -716,8 +777,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename websocket-polling.jpg
-	width 6cm
-	height 4cm
+	width 8cm
+	height 6cm
 
 \end_inset
 
@@ -739,10 +800,10 @@ Websocket - Polling
 \end_layout
 
 \begin_layout Standard
-En la figura 5 puede verse la reducción de tráfico innecesario en la red
- gracias a que no hay que implementar polling enviando paquetes de datos
- que solo “preguntan” al servidor si hay información para que este envíe
- al cliente.
+En la figura 5 puede verse la reducción bits para encapsular los datos y
+ enviarlos a la red, gracias a que no hay que implementar polling enviando
+ paquetes de datos que solo “preguntan” al servidor si hay información para
+ que este envíe al cliente.
  Eso sin contar los paquetes enviados por el cliente que terminan siendo
  inútiles porque el servidor no tiene información para enviar.
  
@@ -763,8 +824,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename websocket-rest.jpg
-	width 6cm
-	height 3cm
+	width 8cm
+	height 5cm
 
 \end_inset
 
@@ -788,7 +849,7 @@ Websocket - Rest
 \begin_layout Standard
 La figura 6 muestra la reducción de tiempo de respuesta al utilizar websockets
  en la transmisión de mensajes.
- El protocolo websocket es el más adecuado para cumplir el objetivo principal
+ Demostrando que es el protocolo más adecuado para cumplir el objetivo principal
  de esta investigación que es lograr la comunicación bidireccional de plataforma
 s móviles.
  
@@ -1091,7 +1152,7 @@ El funcionamiento es el siguiente:
 
 \begin_layout Itemize
 Crear una instancia de la librería fancywebsocket, especificando la dirección
- Ip y el puerto al que se debe conectar.
+ ip y el puerto al que se debe conectar.
  
 \end_layout
 
@@ -1148,13 +1209,107 @@ RESULTADOS
 \end_layout
 
 \begin_layout Subsection
+Comparación
+\end_layout
+
+\begin_layout Standard
+El primer resultado que se obtuvo fue la demostración que el protocolo utilizado
+ es la mejor opción para realizar tele-operación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename websocket-rest-polling.png
+	width 9cm
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Websocket vs Rest vs Polling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el gráfico anterior se puede observar la cantidad de datos enviados por
+ tiempo en milisegundos, demostrando que al utilizar websocket se obtiene
+ un mayor numero de mensajes enviados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename paquetes Enviados-recibidos.png
+	width 9cm
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Paquetes Transmitidos - Recibidos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La figura 10 muestra el porcentaje de consumo de red entre paquetes enviados
+ y recibidos, demostrando que websocket tiene un consumo mínimo de red.
+\end_layout
+
+\begin_layout Subsection
 Servidor
 \end_layout
 
 \begin_layout Standard
 Se tiene un servidor que cuando inicia el websocket esta en espera de los
  clientes que se van a conectar y brinda la comunicación full-duplex, La
- figura 9 describe el servidor.
+ figura 11 describe el servidor.
  Se inicia atraves de línea de comandos en terminal linux en nuestro caso,
  para esto se hace lo siguiente: 
 \end_layout
@@ -1215,8 +1370,8 @@ Cliente
 \begin_layout Standard
 En cuanto al cliente web, Conectar el cliente abriendo un navegador web
  especificando la dirección del servidor, en este caso se trabaja en un
- servidor local, se muestra en la figura 10 http://127.0.0.1Teleoperacion-Bilateral
-/Administrador/g 
+ servidor local, se muestra en la figura 12, http://127.0.0.1Teleoperacion-Bilatera
+l/Administrador/g 
 \end_layout
 
 \begin_layout Standard
@@ -1265,7 +1420,7 @@ Comunicación Bidireccional
 
 \begin_layout Itemize
 La primera conexión permite identificar al servidor que cliente se conecta,
- como se puede ver en la figura 11.
+ como se puede ver en la figura 13.
 \end_layout
 
 \begin_layout Itemize
@@ -1325,8 +1480,8 @@ a”}
 
 \begin_layout Itemize
 El re-direccionamiento de los mensajes va a variar dependiendo de los datos
- que llegue en la cadena json en el campo origen y destino, como se observa
- en la figura 12.
+ que llegue en la cadena JSON en el campo origen y destino, como se observa
+ en la figura 14.
  
 \end_layout
 
@@ -1398,11 +1553,15 @@ Es necesario empaquetar los datos en formato Json para poder utilizar cada
 \end_layout
 
 \begin_layout Section*
-Acknowlegment
+Agradecimientos
 \end_layout
 
 \begin_layout Standard
-bla bla
+Al Consorcio Ecuatoriano para el Desarrollo de Internet Avanzado -CEDIA-,
+ Universidad Técnica de Ambato UTA y a la Universidad de las Fuerzas Armadas
+ ESPE por el financiamiento del proyecto Tele-operación Bilateral Cooperativo
+ de Múltiples Manipuladores Móviles CEPRAIX-2015-05 y el apoyo para el desarroll
+o del presente trabajo.
 \end_layout
 
 \begin_layout Standard
@@ -1424,7 +1583,7 @@ phy entries embedded in the LaTeX-file.
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "IEEEabrv,IEEEexample,../Websocket"
+bibfiles "IEEEabrv,IEEEexample,C:/Users/Admin/Documents/Websocket"
 options "IEEEtran"
 
 \end_inset

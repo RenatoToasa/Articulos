@@ -1,0 +1,537 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[twocolumn,conference]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage[unicode=true,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{pdftitle={Your Title},
+ pdfauthor={Your Name},
+ pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+
+\makeatother
+
+\begin{document}
+
+
+
+
+
+\title{PLATAFORMA DE COMUNICACIÓN EN TIEMPO REAL PARA PLATAFORMAS MÓVILES}
+
+
+\author{\IEEEauthorblockN{Your~Name\IEEEauthorrefmark{1}, Second~Name\IEEEauthorrefmark{2},
+Third~Name\IEEEauthorrefmark{3}, Fourth~Name\IEEEauthorrefmark{3}
+and Fifth~Name\IEEEauthorrefmark{4}}\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and\\
+Computer Engineering\\
+Institute of Technology\\
+99999 Testcity\\
+Email: test@test.tes}\IEEEauthorblockA{\IEEEauthorrefmark{2}Ecole Superieure\\
+Nantes, France\\
+Email: second@second.fr}\IEEEauthorblockA{\IEEEauthorrefmark{3}Star Academy\\
+San Francisco, California 99999-9999\\
+Telephone: (800) 555--5555\\
+Fax: (888) 555--5555}\IEEEauthorblockA{\IEEEauthorrefmark{4}Rückwärts GmbH\\
+Niemandsweg 73\\
+99999 Musterstadt, Germany}}
+\maketitle
+\begin{abstract}
+En este trabajo se describe como desarrollar un servidor que brinde
+un canal de comunicación en tiempo real, que será utilzado para controlar
+plataformas móviles, además de crear un cliente web que servirá como
+visualizador de datos que esten interactuando entre el cliente y servidor.
+Se menciona el protocolo de comunicación a utilizar, la forma en el
+que se va a desarrollar, el esquema del cliente, esquema del servidor
+y resultados obtenidos.\end{abstract}
+
+\begin{IEEEkeywords}
+Protocolos, websocket, Json, cliente, servidor
+\end{IEEEkeywords}
+
+
+\section{INTRODUCCIÓN}
+
+La comunicación en tiempo real entre varios dispositivos móviles es
+una necesidad que va creciendo constantemente al realizar tele operación
+entre plataformas móviles, debido a que en la comunicación se va a
+minimizar la pérdida de datos, fallos de conexión, tiempo de respuesta
+entre cliente y servidor, comunicación full-dúplex.\cite{IEEEexample:beebe_archive}
+
+\begin{figure}[H]
+
+
+\begin{centering}
+\includegraphics[width=8cm,height=4cm]{\string"comunicacion full\string".png}\caption{Comunicación Plataforma}
+
+\par\end{centering}
+
+\end{figure}
+
+
+El autor Alan FT Winfield realiza la comunicación entre robots utilizando
+el protocolo de comunicación TCP-IP\cite{Winfield2000}, que no es
+un protocolo muy seguro ya que podria haber pérdida de datos y las
+plataformas móviles no trabajarian de forma correcta. Mientras que
+los autores H. G. Nguyen, N. Pezeshkian, M. Raymond, A. Gupta, utilizan
+radiofrecuencia para la comunicación\cite{Autonomous}, teniendo como
+inconveniente las interferencias que se producen debido a que hay
+varias señales dentro de la misma frecuencia. 
+
+Se propone utilizar en la comunicación en tiempo real el protocolo
+de comunicación denominado websocket, debido a que es una tecnología
+que proporciona un canal de comunicación bidireccional y fullduplex.
+Además utilizar el formato Json para el empaquetamiento de los datos
+de los datos, de esta manera tener el control absoluto de los datos
+que llegan o se envian en el servidor.
+
+Como resultado de esta investigación se obtendrá un servidor web que
+brindará un canal de comunicación estable que permitirá la comunicación
+fullduplex entre los clientes y el servidor, además de un cliente
+web que servira para mostrar los datos que se esten enviando en tiempo
+real. Logrando con esto la comunicación bidireccional de varios dispositivos
+moviles que esten conectados, enviando y recibiendo datos del servidor.
+
+Es presente trabajo esta estructurado de la siguiente manera: en la
+sección 1 Introducción, la sección 2 se realiza la selección del protolo
+de comunicación a utilizar, en la sección 3 se detalla un análisis
+previo al desarrollo del cliente y servidor, en la sección 4 se muestra
+como se desarrollo el servidor que utiliza websocket para el canal
+de comunicación, en la secion 5 el desarrollo del cliente websocket,
+en la sección 6 los resultados experimentales y finalmente en la sección
+7 las conlcusiones. 
+
+
+\section{PROTOCOLOS DE COMUNICACIÓN }
+
+En el mundo de la informática se conoce bajo el nombre de protocolo,
+al lenguaje que es un conjunto de reglas formales, que permiten la
+comunicación de distintas computadoras entre sí. Dentro de las distintas
+redes, como Internet, existen numerosos tipos de protocolos. Aquí
+forman parte los distintos protocolos y modelos de redes que proveen
+servicios de comunicación en sistemas distribuidos\cite{protocolos}. 
+
+
+\subsubsection{Comunicación Cliente - Servidor (Polling)}
+
+El servidor generalmente recibe las peticiones de los clientes, las
+procesa y envía posteriormente los resultados a través de la conexión
+que existe entre ellos. La comunicación entre el cliente y el servidor
+es de tipo Polling (preguntar y recibir) y genera un esquema Half
+Duplex, similar a un sistema PTT (Push To Talk) donde ambas partes
+pueden enviar y recibir mensajes pero solo una a la vez, la figura
+2 muesra el esquema de funcionamiento de Polling\cite{polling}. 
+
+\begin{figure}[H]
+
+
+\centering{}\includegraphics[width=6cm,height=3cm]{esquemaPolling}\caption{Esquema Polling}
+\end{figure}
+
+
+Este gráfico permite comprender la mecánica de asincronismo de estas
+tecnologías. En primer lugar el cliente (browser) envía una petición,
+el servidor la recibe, procesa y envía la respuesta que el navegador
+muestra en pantalla. Este esquema de trabajo hace que el cliente siempre
+tenga que \textquotedblleft pedir\textquotedblright{} para recibir
+la información. Si el lado cliente no solicita información entonces
+esta no será enviada y esto acarrea algunos problemas
+
+
+\subsection{Rest}
+
+Es un estilo de arquitectura de software para sistemas hipermedias
+distribuidos tales como la Web. Cabe destacar que REST no es un estándar,
+ya que es tan solo un estilo de arquitectura. Aún asi Rest está basado
+en estándares\cite{rest}:
+\begin{itemize}
+\item HTTP 
+\item URL
+\item Representación de los recursos XML, HTML 
+\end{itemize}
+Rest dicta que los mensajes HTTP deberían ser tan descriptivos como
+sea posible. Esto hace posible que los intermediarios interpreten
+los mensajes y ejecuten servicios en nombre del usuario. Uno de los
+modos que HTTP logra esto es por medio del uso de varios métodos estándares,
+muchos encabezamientos y un mecanismo de direccionamiento. Por ejemplo,
+las cachés Web saben que por defecto el comando GET es cacheable (ya
+que es side-effect-free) en cambio POST no lo es. Además saben como
+consultar las cabeceras para controlar la caducidad de la información.
+HTTP es un protocolo sin estado y cuando se utiliza adecuadamente,
+es posible interpretar cada mensaje sin ningún conocimiento de los
+mensajes precedentes. Por ejemplo, en vez de logearse del modo que
+lo hace el protocolo FTP, HTTP envía esta información en cada mensaje\cite{rest}. 
+
+Los clientes envían los mensajes basados en los estándares anteriormente
+mencionados hacia el servidor. El servidor los recibe y los puede
+manipular reenviándolos a otro cliente o almacenándolos en una base
+de datos, la figura 3 muestra un esquema del funcionamiento de Rest
+al momento de envió y recepción de mensajes\cite{rest}.
+
+\begin{figure}[H]
+\centering{}\includegraphics[width=8cm,height=4cm]{esquemaRest}\caption{Esquema Rest}
+\end{figure}
+
+
+
+\subsection{Websocket}
+
+Es la tecnología que llega para resolver los problemas de comunicación
+que plantean los esquemas anteriormente descritos. De manera simple,
+Websockets permite comunicar el cliente y el servidor a través de
+un canal Full Duplex bidireccional y sin tener que hacer polling por
+parte del cliente ni acoplarse a estándares predefinidos. La figura
+4 muestra el funcionamiento de los websockets\cite{websocket}.
+
+\begin{figure}[H]
+
+
+\centering{}\includegraphics[width=6cm,height=3cm]{esquemaWebsocket}\caption{Esquema Websocket}
+\end{figure}
+
+
+
+\subsection{Selección del protocolo}
+
+En la tele operación de plataformas móviles se necesita una comunicación
+fullduplex, estable y con mínimos retardos de tiempo, para eso se
+produce a comparar los protocolos anteriormente mencionados.
+\begin{itemize}
+\item Websocket - Polling
+\end{itemize}
+\begin{figure}[H]
+
+
+\centering{}\includegraphics[width=8cm,height=6cm]{websocket-polling}\caption{Websocket - Polling}
+\end{figure}
+
+
+En la figura 5 puede verse la reducción bits para encapsular los datos
+y enviarlos a la red, gracias a que no hay que implementar polling
+enviando paquetes de datos que solo \textquotedblleft preguntan\textquotedblright{}
+al servidor si hay información para que este envíe al cliente. Eso
+sin contar los paquetes enviados por el cliente que terminan siendo
+inútiles porque el servidor no tiene información para enviar. 
+\begin{itemize}
+\item Websocket - Rest 
+\end{itemize}
+\begin{figure}[H]
+\centering{}\includegraphics[width=8cm,height=5cm]{websocket-rest}\caption{Websocket - Rest}
+\end{figure}
+
+
+La figura 6 muestra la reducción de tiempo de respuesta al utilizar
+websockets en la transmisión de mensajes. Demostrando que es el protocolo
+más adecuado para cumplir el objetivo principal de esta investigación
+que es lograr la comunicación bidireccional de plataformas móviles. 
+
+
+\section{ANÁLISIS EN PARA EL DESARROLLO DE LA PLATAFORMA DE COMUNICACIÓN}
+
+Antes de realizer cualquier Proyecto de software es necesario realizer
+ciertas tareas previas para el correcto desarrollo.
+
+
+\subsection{Definir forma de programación}
+
+Existe varias formas o métodos para poder programar o desarrollar
+algún proyecto de software, esto va a depender del funcionamiento
+y objetivos que se vayan a cumplir en el proyecto. De las más conocidas
+son Modelo Vista Controlador (MVC), Por Capas, Modelo Vista Presentador
+(MVP).
+\begin{itemize}
+\item El Modelo Vista controlador (MVC), es un patrón de arquitectura de
+software que separa los datos y la lógica del negocio de una aplicación
+de la interfaz de usuario y el módulo encargado de gestionar los eventos
+y las comunicaciones. Para ello MVC propone la construcción de tres
+componentes distintos que son el modelo, la vista y el controlador,
+es decir, por un lado define componentes para la representación de
+la información, y por otro lado para la interacción del usuario\cite{MVC}.
+\item Programación por Capas: La programación por capas es una arquitectura
+cliente-servidor en el que el objetivo primordial es la separación
+de la lógica de negocios de la lógica de diseño; un ejemplo básico
+de esto consiste en separar la capa de datos de la capa de presentación
+al usuario\cite{capas}.
+\item Modelo Vista Presentador: El Patrón Modelo-Vista-Presentador (MVP)
+surge para ayudar a realizar pruebas automáticas de la interfaz gráfica,
+para ello la idea es codificar la interfaz de usuario lo más simple
+posible, teniendo el menor código posible, de forma que no merezca
+la pena probarla. En su lugar, toda la lógica de la interfaz de usuario,
+se hace en una clase separada (que se conoce como Presentador), que
+no dependa en absoluto de los componentes de la interfaz gráfica y
+que, por tanto, es más fácil de realizar pruebas\cite{MVP}.
+\end{itemize}
+El modelo que se va a utilizar es MVC, debido a que presta los servicios
+necesarios para poder cumplir los objetivos trazados en el proyecto.
+
+
+\subsection{Definir forma de programación}
+
+El momento de desarrollar algún proyecto de software es necesario
+definir que tecnologías se va a utilizar, las mismas se detallan a
+continuación:
+\begin{itemize}
+\item Lenguajes de Programación: Al tratarse de aplicaciones y servicios
+web tanto para el servidor como para los clientes, se decidió utilizar
+PHP para el lado del servidor, y javascript, html, para el lado del
+cliente\cite{php-javascript}.
+\item Tecnologías: Al tratarse de una aplicación web MVC, lo más recomendable
+es utilizar el framework Codeigniter, que es un framework PHP para
+la creación rápida de aplicaciones web\cite{codeigniter}. 
+\end{itemize}
+
+\section{DESARROLLO DEL SERVIDOR}
+
+El servidor web está desarrollado en php, utilizando la librería web
+PHPwebsocket.php, que es una librería que contiene los métodos, funciones
+y variables que utiliza el protocolo websocket para poder crear el
+canal de comunicación\cite{PHPwebsocket}. La figura 7, muestra cómo
+se realiza el proceso de funcionamiento del servidor.
+
+\begin{figure}[H]
+
+
+\centering{}\includegraphics[width=6cm,height=6cm]{esquema-servidor}\caption{Esquema del Servidor}
+\end{figure}
+
+
+El funcionamiento de forma detallada es el siguiente:
+\begin{itemize}
+\item Crear una instancia de la librería PHPWebSocket, para poder utilizar
+los métodos que contiene esta librería. 
+
+\begin{itemize}
+\item \$this->socket= new PHPWebSocket();
+\end{itemize}
+\item Enlaza la función wsOnMessage con la librería PHPWebsocket mediante
+\textquotedblleft message\textquotedblright , permitiendo utilizar
+las variables y funciones referentes a los mensajes que se están enviando.
+
+\begin{itemize}
+\item \$this->socket->bind('message', 'wsOnMessage');
+\end{itemize}
+\item Enlaza wsOnOpen con la librería PHPWebsocker mediante \textquotedblleft open\textquotedblright .
+Permitiendo utilizar las funciones y variables que permiten abrir
+la comunicación. 
+
+\begin{itemize}
+\item \$this->socket->bind('open', 'wsOnOpen'); 
+\end{itemize}
+\item Enlaza wsOnClose con la librería PHPWebsocker mediante \textquotedblleft close\textquotedblright .
+Permitiendo utilizar las funciones y variables que permiten cerrar
+la comunicación. 
+
+\begin{itemize}
+\item \$this->socket->bind('close', 'wsOnClose'); 
+\end{itemize}
+\item Inicializa el socket en la ip y puerto especificados. 
+
+\begin{itemize}
+\item return \$this->socket->wsStartServer ('192.168.1.102',9300); 
+\end{itemize}
+\end{itemize}
+
+\section{DESARROLLO DEL CLIENTE}
+
+Se creó una página web que mostrará los datos enviados por los clientes,
+esta página web también es un cliente más con la diferencia que es
+un cliente de visualización de datos, se utilizó html y css para la
+creación de la misma. La aplicación cliente, es decir el websocket
+cliente está escrito en javascript y jquery, en esta parte también
+se utiliza una librería que contiene los métodos para conectarse a
+un websocket server\cite{fancywebsocket}. Esta librería se llama
+fancywebsocket, de la misma manera tiene los métodos open, message,
+close, el esquema se muestra en la figura 8.
+
+\begin{figure}[H]
+
+
+\centering{}\includegraphics[width=6cm,height=6cm]{esquema-cliente}\caption{Esquema del Cliente}
+\end{figure}
+
+
+El funcionamiento es el siguiente: 
+\begin{itemize}
+\item Crear una instancia de la librería fancywebsocket, especificando la
+dirección ip y el puerto al que se debe conectar. 
+
+\begin{itemize}
+\item Server = new FancyWebSocket('ws://192.168.1.102:9300'); 
+\end{itemize}
+\item Abrir la conexión para poder conectarse al servidor.
+
+\begin{itemize}
+\item Server.bind('open', function()\{\dots \dots \dots \dots{} \}); 
+\end{itemize}
+\item Envia el mensaje hacia el servidor enpaquetado en formato json. 
+
+\begin{itemize}
+\item Server.send('message', JSON.stringify(mensaje) ); 
+\end{itemize}
+\item Cierra la conexión con el servidor.
+
+\begin{itemize}
+\item Server.bind('close', function( data ) -
+\end{itemize}
+\item Obtiene mensajes de los clientes para poder mostrarlos en pantalla.
+
+\begin{itemize}
+\item Server.bind('message', function( payload ); var res = jQuery.parseJSON(payload);
+console.log(res); 
+\end{itemize}
+\end{itemize}
+
+\section{RESULTADOS}
+
+
+\subsection{Comparación}
+
+El primer resultado que se obtuvo fue la demostración que el protocolo
+utilizado es la mejor opción para realizar tele-operación.
+
+\begin{figure}[H]
+
+
+\begin{centering}
+\includegraphics[width=9cm,height=5cm]{websocket-rest-polling}\caption{Websocket vs Rest vs Polling}
+
+\par\end{centering}
+
+\end{figure}
+
+
+En el gráfico anterior se puede observar la cantidad de datos enviados
+por tiempo en milisegundos, demostrando que al utilizar websocket
+se obtiene un mayor numero de mensajes enviados.
+
+\begin{figure}[H]
+\centering{}\includegraphics[width=9cm,height=5cm]{\string"paquetes Enviados-recibidos\string".png}\caption{Paquetes Transmitidos - Recibidos}
+\end{figure}
+
+
+La figura 10 muestra el porcentaje de consumo de red entre paquetes
+enviados y recibidos, demostrando que websocket tiene un consumo mínimo
+de red.
+
+
+\subsection{Servidor}
+
+Se tiene un servidor que cuando inicia el websocket esta en espera
+de los clientes que se van a conectar y brinda la comunicación full-duplex,
+La figura 11 describe el servidor. Se inicia atraves de línea de comandos
+en terminal linux en nuestro caso, para esto se hace lo siguiente: 
+\begin{itemize}
+\item Ubicarse en la dirección donde estén los archivos y escribir : /var/www/html/Teleoperacion-Bilateral/.
+\item Escribir el comando para iniciar el servidor websocker, En la siguiente
+figura se detalla los servicios que se inician. php index.php Administrador/iniciar\_socket. 
+\end{itemize}
+\begin{figure}[H]
+
+
+\centering{}\includegraphics[width=6cm,height=5cm]{comunicacion-clientes-servidor}\caption{Comunicación Clientes - Servidor}
+\end{figure}
+
+
+
+\subsection{Cliente}
+
+En cuanto al cliente web, Conectar el cliente abriendo un navegador
+web especificando la dirección del servidor, en este caso se trabaja
+en un servidor local, se muestra en la figura 12, http://127.0.0.1Teleoperacion-Bilateral/Administrador/g 
+
+\begin{figure}[H]
+
+
+\begin{centering}
+\includegraphics[width=7cm,height=5cm]{clienteWeb}
+\par\end{centering}
+
+\caption{Cliente Web}
+\end{figure}
+
+
+
+\subsection{Comunicación Bidireccional}
+\begin{itemize}
+\item La primera conexión permite identificar al servidor que cliente se
+conecta, como se puede ver en la figura 13.
+\item El cliente envia el mensaje de la siguiente forma: \{\textquotedbl{}cadena\textquotedbl{}:\textquotedbl{}c\textquotedblright\}
+\item Desde el cliente se envian los datos en formato JSON \{\textquotedbl{}cadena\textquotedbl{}:\textquotedbl{}cadena\textquotedblright ,\textquotedblright cadena\textquotedblright :\textquotedblright cadena\textquotedblright\} 
+\end{itemize}
+\begin{figure}[H]
+
+
+\begin{centering}
+\includegraphics[width=8cm,height=4cm]{identificacion}\caption{Identificación de clientes}
+
+\par\end{centering}
+
+\end{figure}
+
+\begin{itemize}
+\item Los mensajes llegan al servidor identificando \{\textquotedbl{}cadena\textquotedbl{}:\textquotedbl{}cadena\textquotedblright ,\textquotedblright cadena\textquotedblright :\textquotedblright cadena\textquotedblright\} 
+\item El re-direccionamiento de los mensajes va a variar dependiendo de
+los datos que llegue en la cadena JSON en el campo origen y destino,
+como se observa en la figura 14. 
+\end{itemize}
+\begin{figure}[H]
+
+
+\begin{centering}
+\includegraphics[width=8cm,height=4cm]{redireccionamieto}
+\par\end{centering}
+
+\caption{Redireccionamiento}
+
+
+\end{figure}
+
+
+
+\section{CONCLUSIONES}
+\begin{itemize}
+\item Se utilizó el protocolo de comunicación webocket, debido a que brinda
+una comunicación estable, full duplex y con un tiempo de respuesta
+mínimo. 
+\item El framework codeigniter ofrece un modelo vista controlador, de modo
+que facilitó la programación de las aplicaciones con las que se está
+trabajando. 
+\item Es necesario empaquetar los datos en formato Json para poder utilizar
+cada campo de la cadena que se crea, permitiendo tener el control
+de los datos que entran y salen del servidor. 
+\end{itemize}
+
+\section*{Agradecimientos}
+
+Al Consorcio Ecuatoriano para el Desarrollo de Internet Avanzado -CEDIA-,
+Universidad Técnica de Ambato UTA y a la Universidad de las Fuerzas
+Armadas ESPE por el financiamiento del proyecto Tele-operación Bilateral
+Cooperativo de Múltiples Manipuladores Móviles CEPRAIX-2015-05 y el
+apoyo para el desarrollo del presente trabajo.
+
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,IEEEexample,C:/Users/Admin/Documents/Websocket}
+
+\begin{IEEEbiography}[{\fbox{\begin{minipage}[t][1.25in]{1in}%
+Replace this box by an image with a width of 1\,in and a height of
+1.25\,in!%
+\end{minipage}}}]{Your Name}
+ All about you and the what your interests are.
+\end{IEEEbiography}
+
+
+\begin{IEEEbiographynophoto}{Coauthor}
+Same again for the co-author, but without photo\end{IEEEbiographynophoto}
+
+
+\end{document}

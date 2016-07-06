@@ -164,7 +164,7 @@ affiliations use this way:
 
 
 \begin_inset Flex Author Name
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Your
@@ -389,13 +389,6 @@ La comunicación en tiempo real entre varios dispositivos móviles es una
  plataformas móviles, debido a que en la comunicación se va a minimizar
  la pérdida de datos, fallos de conexión, tiempo de respuesta entre cliente
  y servidor, comunicación full-dúplex.
-\begin_inset CommandInset citation
-LatexCommand citet
-key "IEEEexample:beebe_archive"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1583,7 +1576,7 @@ phy entries embedded in the LaTeX-file.
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "IEEEabrv,IEEEexample,C:/Users/Admin/Documents/Websocket"
+bibfiles "Websocket"
 options "IEEEtran"
 
 \end_inset

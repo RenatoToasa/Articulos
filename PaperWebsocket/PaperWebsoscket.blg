@@ -1,0 +1,13 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: PaperWebsoscket.aux
+The style file: IEEEtran.bst
+Database file #1: IEEEabrv.bib
+Database file #2: IEEEexample.bib
+Database file #3: C:/Users/Admin/Documents/Websocket.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Too many commas in name 1 of "H. G. Nguyen, N. Pezeshkian, M. Raymond, A. Gupta J. M. Spector" for entry Autonomous
+while executing---line 2403 of file IEEEtran.bst
+
+Done.
+(There was 1 error message)

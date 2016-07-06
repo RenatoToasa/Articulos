@@ -305,7 +305,7 @@ Fax: (888) 555--5555
 
 \begin_layout Abstract
 En este trabajo se describe como desarrollar una plataforma de comunicación
- en tiempo real enfocada en tele-rehabilitación, detallando le protocolo
+ en tiempo real enfocada en tele-rehabilitación, detallando el protocolo
  de comunicación a utilizar, desarrollando una animación 3d y mediante una
  camará transmitir el streaming del paciente que será visualizada en una
  página web y finalmente capturando los movimientos de la persona que este
@@ -392,9 +392,31 @@ key "cuervo2013biomechanical"
 
 \end_inset
 
-, en cambio los autores García-Molina A, Gómez A, Rodríguez P, Sánchez-Carrión
+,El servicio de tele-fisioterapia propuesto integra 2 escenarios geográficamente
+ distribuidos, la ubicación del paciente que presenta discapacidad motora
+ leve y el centro de rehabilitación; éstos se comunican mediante internet
+ siguiendo los estándares establecidos en Telemedicina, canal por el cual
+ fluye la información médica
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cuervo2013biomechanical"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En cambio los autores García-Molina A, Gómez A, Rodríguez P, Sánchez-Carrión
  R, realizan un Programa clínico de telerrehabilitación cognitiva en el
- traumatismo craneoencefálico
+ traumatismo craneoencefálico.
+ Tras la aplicación del programa de rehabilitación
+\end_layout
+
+\begin_layout Standard
+cognitiva intensiva computerizada los pacientes mejoran sus- tancialmente
+ su rendimiento en los tests neuropsicológicos administrados en relación
+ al inicio del tratamiento.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "creaneoencefalico"
@@ -407,9 +429,9 @@ key "creaneoencefalico"
 \begin_layout Standard
 El trabajo que genera este artículo muestra el uso de las TICs para implementar
  un modelo de telerehabilitación del brazo, para ser mas específicos de
- los daños que se ocacionan en las muñecas de la mano, permitiendo asegurar
- la transferencia de información entre los profesionales de la rehabilitación
- y las personas que necesiten rehabilitación.
+ los daños que se ocacionan en las muñecas, permitiendo asegurar la transferenci
+a de información entre los profesionales de la rehabilitación y las personas
+ que necesiten rehabilitación.
  
 \end_layout
 
@@ -450,7 +472,7 @@ key "falcon"
 
 \begin_layout Standard
 De acuerdo a los resultados de selección de una interfaz háptica para aplicacion
-es de asistencia en telee-rehabilitación se concloye que los joysticks hápticos
+es de asistencia en telee-rehabilitación se concluye que los joysticks hápticos
  Phantom Omni® y Novint Falcon™ son dispositivos de bajo costo con una serie
  de características electromecánicas que permiten una interacción apropiada
  en sistemas de teleoperación donde se requiere de ciertas habilidades manuales
@@ -485,9 +507,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename falcon.png
-	width 7cm
-	height 3cm
+	filename falconNovint.png
+	width 5cm
+	height 7cm
 
 \end_inset
 
@@ -495,15 +517,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Falcon Novint
+a) La estructura cinemática paralela de Novint Falcon permite movimientos
+ de traslación en un espacio de trabajo 3D o x,y,z.
+ b) El algoritmo de control se basa tanto en un avance y una parte de realimenta
+ción.
+ c) Respuesta de frecuencia del estimulador.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -516,6 +538,11 @@ Falcon Novint
 Se captura los datos que muestre el Novint Falcon en tiempo real, y se los
  envia en formato json hacia el servidor de internet, utilizando el protocolo
  de comunicación websocket.
+\end_layout
+
+\begin_layout Standard
+enlace PAPER: https://www.researchgate.net/profile/Alessandro_Panarese/publication
+/49624593_Medical_Engineering__Physics/links/0c96051deb2c20f0d6000000.pdf
 \end_layout
 
 \begin_layout Section
@@ -718,7 +745,7 @@ return $this->socket->wsStartServer ('192.168.1.102',9300);
 
 \end_deeper
 \begin_layout Section
-STREAM DE VIDEO
+STREAM DE AUDIO Y VIDEO
 \end_layout
 
 \begin_layout Standard
@@ -738,14 +765,14 @@ key "streaming"
 \end_layout
 
 \begin_layout Standard
-En el presente proyecto para transmisión y recepción de video y audio se
+En el presente proyecto para transmisión y recepción de audio y video se
  utiliza en protocolo estandar Webrtc.
 \end_layout
 
 \begin_layout Standard
 WebRTC, también conocido como Web Real-Time Communications, es un proyecto
- de código abierto – promovido por Google, Mozilla y otros – que permite
- comunicaciones en tiempo real sin plug-ins a través de una API Javascript.
+ de código abierto – promovido por Google, Mozilla y otros que permite comunicac
+iones en tiempo real sin plug-ins a través de una API Javascript.
  Facilita las aplicaciones de llamadas de voz, chat de video y compartimiento
  de archivos entre navegadores
 \begin_inset CommandInset citation
@@ -790,13 +817,17 @@ Stream de video
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+El paciente sera el que transmita video, abriendo un enlace web eb donde
+ este creado el servidor broadcasting para video, y el especialista transmitira
+ audio, de la misma manera abriendo un enlace web.
+ Esto con el fin de que el paciente pueda escuchar los consejos dem especialista
+, y el especialiste pueda ver lo que hace el paciente.
 \end_layout
 
 \begin_layout Section
@@ -898,7 +929,7 @@ Cierra la conexión con el servidor.
 
 \begin_deeper
 \begin_layout Itemize
-Server.bind('close', function( data ) -
+Server.bind('close', function( data ) - 
 \end_layout
 
 \end_deeper
@@ -1053,10 +1084,6 @@ placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center

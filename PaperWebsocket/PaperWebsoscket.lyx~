@@ -164,14 +164,14 @@ affiliations use this way:
 
 
 \begin_inset Flex Author Name
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Your
+Renato
 \begin_inset space ~
 \end_inset
 
-Name
+Toasa
 \begin_inset Flex Author Mark
 status open
 
@@ -389,13 +389,6 @@ La comunicación en tiempo real entre varios dispositivos móviles es una
  plataformas móviles, debido a que en la comunicación se va a minimizar
  la pérdida de datos, fallos de conexión, tiempo de respuesta entre cliente
  y servidor, comunicación full-dúplex.
-\begin_inset CommandInset citation
-LatexCommand citet
-key "IEEEexample:beebe_archive"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1558,7 +1551,7 @@ Agradecimientos
 
 \begin_layout Standard
 Al Consorcio Ecuatoriano para el Desarrollo de Internet Avanzado -CEDIA-,
- Universidad Técnica de Ambato y a la Universidad de las Fuerzas Armadas
+ Universidad Técnica de Ambato UTA y a la Universidad de las Fuerzas Armadas
  ESPE por el financiamiento del proyecto Tele-operación Bilateral Cooperativo
  de Múltiples Manipuladores Móviles CEPRAIX-2015-05 y el apoyo para el desarroll
 o del presente trabajo.
@@ -1583,7 +1576,7 @@ phy entries embedded in the LaTeX-file.
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "IEEEabrv,IEEEexample,C:/Users/Admin/Documents/Websocket"
+bibfiles "Websocket"
 options "IEEEtran"
 
 \end_inset

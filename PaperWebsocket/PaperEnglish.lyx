@@ -145,7 +145,7 @@ http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
 \end_layout
 
 \begin_layout Title
-COMMUNICATION PLATFORM FOR REAL-TIME FOR MOBILE PLATFORMS ROBOTIC
+REAL TIME COMMUNICATION PLATFORM FOR MOBILE ROBOTS
 \end_layout
 
 \begin_layout Author
@@ -306,7 +306,7 @@ Latacunga - Ecuador
 \begin_inset Newline newline
 \end_inset
 
-Email: {vhandaluz1, drrivas, jssanchez, fchicaiza,wquevedo}@espe.edu.ec
+Email: {vhandaluz1, drrivas, jssanchez, fchicaiza, wquevedo}@espe.edu.ec
 \end_layout
 
 \end_inset
@@ -316,15 +316,15 @@ Email: {vhandaluz1, drrivas, jssanchez, fchicaiza,wquevedo}@espe.edu.ec
 
 \begin_layout Abstract
 This paper describes how to develop a server that provides a communication
- channel in real time, which will be utilzado to control mobile robotic
- platforms and create a web client which would allow the telemetry, I interact
- between the client and the server.
+ channel in real time, which will be utilzado to control mobile robots and
+ create a web client which would allow the telemetry, I interact between
+ the client and the server.
  the communication protocol to use mentioned, how the which will develop
- the scheme client, server schema and results obtained..
+ the scheme client, server schema and results obtained.
 \end_layout
 
 \begin_layout Keywords
-Protocols, websocket, Json, client, server.
+Robots, Mobile, Protocols, Websocket, Json, client, Server.
 \end_layout
 
 \begin_layout Section
@@ -334,9 +334,8 @@ INTRODUCTION
 \begin_layout Standard
 The real-time communication between various mobile devices is a need that
  is growing constantly especially when performing teleoperation between
- mobile robotic platforms, because communication is to minimize data loss,
- connection failures, response time between client and server, full-duplex
- communication.
+ mobile robots, because communication is to minimize data loss, connection
+ failures, response time between client and server, full-duplex communication.
 \end_layout
 
 \begin_layout Standard
@@ -382,7 +381,7 @@ key "Winfield2000"
 \end_inset
 
 , which is not a very safe protocol as it could be loss of data and mobile
- robotic platforms not work correctly.
+ robots not work correctly.
  While the authors H.
  G.
  Nguyen, N.
@@ -692,9 +691,9 @@ Protocol selection
 \end_layout
 
 \begin_layout Standard
-In teleoperation of mobile robotic platforms communication is needed fullduplex,
- stable and with minimal time delays, for that is produced to compare the
- above protocols.
+In teleoperation of mobile robots communication is needed fullduplex, stable
+ and with minimal time delays, for that is produced to compare the above
+ protocols.
 \end_layout
 
 \begin_layout Itemize
@@ -783,7 +782,7 @@ Websocket Vs Rest
 In Figure 6 shows the reduction in response time when using websockets in
  message transmission.
  Proving that is the protocol most appropriate to fulfill the main objective
- of this research which it is to achieve two-way communication mobile platforms.
+ of this research which it is to achieve two-way communication mobile robots.
 \end_layout
 
 \begin_layout Section

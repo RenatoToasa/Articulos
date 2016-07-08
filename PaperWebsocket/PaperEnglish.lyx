@@ -1,0 +1,1556 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\end_preamble
+\options conference
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template LyX file for conference articles of conferences organized
+ by the Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE journal articles, see the template file 
+\emph on
+IEEEtran-Journal.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+COMMUNICATION PLATFORM FOR REAL-TIME FOR MOBILE PLATFORMS ROBOTIC
+\end_layout
+
+\begin_layout Author
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+for more than 3
+\begin_inset space ~
+\end_inset
+
+affiliations use this way: 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Renato Toasa
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+, Victor Andaluz
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+, David Rivas
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+, Jorge Sanchez
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+, Cristian Gallardo
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+José Varela
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+, Fernando Chicaiza
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+, Washington Quevedo
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Universidad Técnica de Ambato, Facultad de Ingenieria en Sistemas, Electronica
+ e Industrial
+\begin_inset Newline newline
+\end_inset
+
+Ambato - Ecuador
+\begin_inset Newline newline
+\end_inset
+
+Email: renato_toasa@hotmail.com, cmgallardop@gmail.com, jazjose@hotmail.es
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Author Mark
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Universidad de las Fuerzas Armadas ESPE, Departamento de Electrica y Electronica
+\begin_inset Newline newline
+\end_inset
+
+Latacunga - Ecuador
+\begin_inset Newline newline
+\end_inset
+
+Email: {vhandaluz1, drrivas, jssanchez, fchicaiza,wquevedo}@espe.edu.ec
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+This paper describes how to develop a server that provides a communication
+ channel in real time, which will be utilzado to control mobile robotic
+ platforms and create a web client which would allow the telemetry, I interact
+ between the client and the server.
+ the communication protocol to use mentioned, how the which will develop
+ the scheme client, server schema and results obtained..
+\end_layout
+
+\begin_layout Keywords
+Protocols, websocket, Json, client, server.
+\end_layout
+
+\begin_layout Section
+INTRODUCTION
+\end_layout
+
+\begin_layout Standard
+The real-time communication between various mobile devices is a need that
+ is growing constantly especially when performing teleoperation between
+ mobile robotic platforms, because communication is to minimize data loss,
+ connection failures, response time between client and server, full-duplex
+ communication.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename comunicacion full.png
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Communication scheme with the station - robotic platform
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The author Alan FT Winfield makes communication between robots using the
+ TCP-IP communication
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Winfield2000"
+
+\end_inset
+
+, which is not a very safe protocol as it could be loss of data and mobile
+ robotic platforms not work correctly.
+ While the authors H.
+ G.
+ Nguyen, N.
+ Pezeshkian, Raymond M., A.
+ Gupta, use radio frequency to communicate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Autonomous"
+
+\end_inset
+
+, having as drawback interference occurring because there are several signals
+ within the same frequency.
+\end_layout
+
+\begin_layout Standard
+It intends to use in real-time communication protocol websocket communication
+ called because it is a technology that provides a bidirectional communication
+ channel - fullduplex.
+ In addition to use Json for data packaging data thus have complete control
+ of the data sent and arrive on the server.
+ 
+\end_layout
+
+\begin_layout Standard
+As a result of this investigation a web server that will provide stable
+ communication channel that will allow full duplex communication between
+ clients and the server, and a web client which will show the data being
+ sent in real time will be obtained.
+ Thus achieving two-way communication of various mobile devices that are
+ connected, sending and receiving data from the server.
+ 
+\end_layout
+
+\begin_layout Standard
+This paper is structured is as follows: in the Section 1 Introduction, Section
+ 2 the selection of the communication protocol 3 was performed prior to
+ the development of client and server, in Section 4 analyzes detailed the
+ server using websocket 5 customer development websocket shown as development,
+ section 6 experimental results and finally in section 7 conclusions.
+ 
+\end_layout
+
+\begin_layout Section
+COMMUNICATION PROTOCOLS
+\end_layout
+
+\begin_layout Standard
+In the computer world it is known under the name of protocol, the language
+ is a set of formal rules, which allow communication of different computers
+ together.
+\end_layout
+
+\begin_layout Standard
+Within the different networks such as the Internet, there are many types
+ of protocols.
+ Here They are part of the various protocols and network models that provide
+ communication services in distributed systems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "protocolos"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Communication Client - Server (Polling)
+\end_layout
+
+\begin_layout Standard
+The server usually receives requests from clients, processes it and then
+ sends the results through the connection between them.
+\end_layout
+
+\begin_layout Standard
+Communication between the client and the server is Polling (ask and receive)
+ type and generates a diagram, similar to a PTT system (Push To Talk) where
+ both parties can send and receive messages but only one at a time Half
+ Duplex, the figure 2 shows the scheme of operation of polling.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "polling"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquemaPolling.jpg
+	width 6cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Polling schem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This graph provides insight into the mechanics of asynchronism of these
+ technologies.
+ First the client (browser) sends a request, the server receives, processes
+ and sends the response that the browser displays.
+\end_layout
+
+\begin_layout Standard
+This work scheme makes the customer always has to ask to receive information.
+ If the client side does not request information then this will not be sent
+ and this brings some problems.
+\end_layout
+
+\begin_layout Subsection
+Rest
+\end_layout
+
+\begin_layout Standard
+It is a style of software architecture for hypermedia systems distributed
+ such as the Web.
+ It should be noted that REST is not a standard, since it is just a style
+ of architecture.
+ Even so Rest is based on standards
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rest"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+HTTP 
+\end_layout
+
+\begin_layout Itemize
+URL
+\end_layout
+
+\begin_layout Itemize
+Representation XML, HTML 
+\end_layout
+
+\begin_layout Standard
+Rest dictates that HTTP messages should be as descriptive as may be possible.
+ This enables the intermediaries interpret messages and run services on
+ behalf of the user.
+ 
+\end_layout
+
+\begin_layout Standard
+One of the HTTP modes that this is achieved through the use of several standard
+ methods, many headers and an addressing mechanism.
+ For example, Web caches know that by default the GET command is cacheable
+ (and which is side-effect-free) instead POST is not.
+ Furthermore know how consult headers to control the expiration information.
+ 
+\end_layout
+
+\begin_layout Standard
+HTTP is a stateless protocol and when properly used, it is possible to interpret
+ each message without any knowledge of the preceding messages.
+ For example, instead of the so logearse does the FTP protocol, HTTP sends
+ this information in each message
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rest"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Clients send messages based on the above standards referred to the server.
+ The server receives and can manipulate forwarding them to another client
+ or storing them in a database data, Figure 3 shows a diagram of the operation
+ of Rest when sending and receiving messages
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rest"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquemaRest.jpg
+	width 7cm
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rest scheme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Websocket
+\end_layout
+
+\begin_layout Standard
+It is the technology that comes to solve communication problems posed schemes
+ described above.
+ Simply, Websockets can communicate the client and the server through a
+ Full Duplex bidirectional channel without having to polling by the customer
+ or attached to predefined standards.
+ The figure 4 shows the operation of websockets
+\begin_inset CommandInset citation
+LatexCommand cite
+key "websocket"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquemaWebsocket.jpg
+	width 6cm
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Websocket scheme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Protocol selection
+\end_layout
+
+\begin_layout Standard
+In teleoperation of mobile robotic platforms communication is needed fullduplex,
+ stable and with minimal time delays, for that is produced to compare the
+ above protocols.
+\end_layout
+
+\begin_layout Itemize
+Websocket - Polling
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename websocket-polling.jpg
+	width 8cm
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Websocket Vs Polling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Figure 5 it can be seen reduced to encapsulate data bits and send them
+ to the network, thanks to not to implement polling sending data packets
+ only ask the server for this information to send to the client.
+ That not counting the packets sent by the client end up being useless because
+ the server has no information to send.
+\end_layout
+
+\begin_layout Itemize
+Websocket - Rest 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename websocket-rest.jpg
+	width 8cm
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Websocket Vs Rest
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Figure 6 shows the reduction in response time when using websockets in
+ message transmission.
+ Proving that is the protocol most appropriate to fulfill the main objective
+ of this research which it is to achieve two-way communication mobile platforms.
+\end_layout
+
+\begin_layout Section
+ANALYSIS FOR THE DEVELOPMENT OF COMMUNICATION PLATFORM
+\end_layout
+
+\begin_layout Standard
+Before performing any software project is necessary certain preconditions
+ for the proper development tasks.
+ 
+\end_layout
+
+\begin_layout Subsection
+Define form of programming
+\end_layout
+
+\begin_layout Standard
+There are several ways or methods to program or develop any software project,
+ this will depend on the performance and objectives will be met in the project.
+ The best known They are Model View Controller (MVC), layered, Model View
+ Presenter (MVP).
+\end_layout
+
+\begin_layout Itemize
+The Model-View-Controller (MVC) is an architectural pattern software separating
+ data and business logic of an application user interface and the module
+ responsible for managing events and communications.
+ For this MVC proposes the construction of three different components that
+ are the model, view and controller, that is, on the one hand defined for
+ representing components information, and secondly for user interaction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MVC"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Multitier architecture: The multitier architecture is an architecture client-ser
+ver where the primary goal is separation Business logic logic design; a
+ basic example this is to separate the data layer from the presentation
+ layer the user
+\begin_inset CommandInset citation
+LatexCommand cite
+key "capas"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Model View Presenter: The Model-View-Presenter (MVP) arises to help automatic
+ testing of the graphical interface, This idea is to encode the user interface
+ as simple possible, with the smallest possible code so that does not deserve
+ worth trying.
+ Instead, all the logic of the user interface, it is done in a separate
+ class (known as Presenter), which does not depend at all of the components
+ of the graphical interface and which thus is easier to test
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MVP"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The model used is MVC, because it provides the services necessary to meet
+ the objectives outlined in the project.
+ 
+\end_layout
+
+\begin_layout Subsection
+Define programming tools
+\end_layout
+
+\begin_layout Standard
+The time to develop a software project is necessary define which technologies
+ will be used, they are detailed continuation:
+\end_layout
+
+\begin_layout Itemize
+Programming Languages: Being applications and services web for both the
+ server and clients, decided to use PHP for the server side and javascript,
+ html to side client
+\begin_inset CommandInset citation
+LatexCommand cite
+key "php-javascript"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Technologies: Being an MVC web application, as recommended Codeigniter is
+ to use the framework, which is a framework for PHP the rapid creation of
+ web applications
+\begin_inset CommandInset citation
+LatexCommand cite
+key "codeigniter"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+DEVELOPMENT SERVER
+\end_layout
+
+\begin_layout Standard
+The web server is developed in php, using the web library PHPwebsocket.php,
+ which is a library that contains the methods, functions and variables using
+ the WebSocket protocol to create the communication channel
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PHPwebsocket"
+
+\end_inset
+
+.
+ Figure 7 shows how the process of server operation is performed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquema-servidor.jpg
+	width 6cm
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Server Scheme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Operation in detail is as follows:
+\end_layout
+
+\begin_layout Itemize
+Create an instance of the PHPWebSocket library , to use methods contained
+ in this library.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket= new PHPWebSocket();
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+WsOnMessage links the library function with PHPWebsocket by message, allowing
+ use variables and functions related to messages being sent.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('message', 'wsOnMessage');
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+WsOnOpen links with PHPWebsocker library by left openl right.
+ Allowed to use the functions and variables that allow open the communication.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('open', 'wsOnOpen'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+WinClose links with PHPWebsocker library by left close right.
+ Allowing use functions and variables that allow close the communication.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$this->socket->bind('close', 'wsOnClose'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Initializes the socket in the specified ip and port.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+return $this->socket->wsStartServer ('ip',port); 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+CLIENT DEVELOPMENT
+\end_layout
+
+\begin_layout Standard
+A web page that displays the data sent by customers was created, this website
+ is also another client with the difference that is a client display data,
+ was used html and css for creating it.
+ The client application, ie the websocket client is written in javascript
+ and jquery, in this tambiénse part uses a library containing methods to
+ connect to a WebSocket server
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fancywebsocket"
+
+\end_inset
+
+.
+ This library is called fancywebsocket, just as have the open methods, message,
+ close, the scheme shown in Figure 8.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquema-cliente.jpg
+	width 6cm
+	height 6cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Client Scheme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The operation is as follows:
+\end_layout
+
+\begin_layout Itemize
+Create an instance of the fancywebsocket library, specifying the ip address
+ and port to be connected.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server = new FancyWebSocket ('ws://ip:port'); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Open connection to connect to the server.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('open', function(){………… }); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Send the message to the server packaging  in Json format.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.send('message', json.stringify(mensaje) ); 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Close the connection to the server.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('close', function( data ).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Get messages from clients to display them on screen.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Server.bind('message', function( payload ); 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+RESULTS
+\end_layout
+
+\begin_layout Subsection
+Comparison protocols
+\end_layout
+
+\begin_layout Standard
+The first result obtained was the demonstration that the protocol used is
+ the best choice for tele-operation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename websocket-rest-polling.png
+	width 9cm
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Websocket vs Rest vs Polling
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the above chart shows the amount of data sent by time in milliseconds,
+ demonstrating that using websocket a greater number of messages sent is
+ obtained.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename paquetes Enviados-recibidos.png
+	width 9cm
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Transmitted - Received packets
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 10 shows the percentage of network consumption between packets sent
+ and received, showing that websocket has a minimum network consumption.
+\end_layout
+
+\begin_layout Subsection
+Server
+\end_layout
+
+\begin_layout Standard
+A server when you start the websocket is awaiting It has to customers to
+ be connected and provides the full duplex communication, Figure 11 describes
+ the server.
+ It starts THROUGH command line in linux terminal in our case, this is done
+ as follows:
+\end_layout
+
+\begin_layout Itemize
+Located in the direction where are the files and write : /var/www/html/Teleopera
+cion-Bilateral/.
+\end_layout
+
+\begin_layout Itemize
+Write the command to start the server websocket in the following Figure
+ the services that start detailed.
+ php index.php Administrador/iniciar_socket.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename comunicacion-clientes-servidor.jpg
+	width 6cm
+	height 5cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Communication Clients - Server
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Client
+\end_layout
+
+\begin_layout Standard
+As for the web client Connect the client opening a browser web server specifying
+ the address, in this case working a local server, shown in Figure 12, http://12
+7.0.0.1Teleoperacion-Bilateral/Administrador/g 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename clienteWeb.jpg
+	width 7cm
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Web Client
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Bidirectional communication
+\end_layout
+
+\begin_layout Itemize
+The first connection identifies the server to client connects, as can be
+ seen in Figure 13.
+\end_layout
+
+\begin_layout Itemize
+The client sends the message as follows: {"nombre":"client”}
+\end_layout
+
+\begin_layout Itemize
+From the client data are sent in JSON format:{"text":"text”,”text”:”text”}
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename identificacion.jpg
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Client identification
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The messages arrive at the server identifying{"text":"text”,”text”:”text”}
+ 
+\end_layout
+
+\begin_layout Itemize
+Forwarding messages will vary depending on data arrives in the Json string
+ in the field origin and destination, as shown in Figure 14.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename redireccionamieto.jpg
+	width 8cm
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Redirection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CONCLUSIONS
+\end_layout
+
+\begin_layout Itemize
+Websocket communication protocol is used because it provides stable communicatio
+n, full duplex and a response time minimum.
+ 
+\end_layout
+
+\begin_layout Itemize
+Websocket sends the largest number of packages in a smaller number of time
+ being 80% more effective than rest and polling
+\end_layout
+
+\begin_layout Itemize
+As for the network used in packets sent and received by consumption it is
+ minimal in websocket comparitively with rest and polling
+\end_layout
+
+\begin_layout Section*
+Acknowledgment
+\end_layout
+
+\begin_layout Standard
+The authors would like to thanks to the Consorcio Ecuatoriano para el Desarrollo
+ de Internet Avanzado -CEDIA-, Universidad de las Fuerzas Armadas ESPE,
+ Universidad Técnica de Ambato and the Escuela Superior Politécnica del
+ Chimborazo for financing the project Tele-operación bilateral cooperativo
+ de múltiples manipuladores móviles – CEPRAIX-2015-05, for the support to
+ develop this paper.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remember though that your final submission is supposed to have all the bibliogra
+phy entries embedded in the LaTeX-file.
+ This means you eventually have to copy the .bbl file into the latex file
+ and remove the bibtex lines.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "Websocket"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Biography
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "1in"
+special "none"
+height "1.25in"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+Replace this box by an image with a width of 1
+\begin_inset space \thinspace{}
+\end_inset
+
+in and a height of 1.25
+\begin_inset space \thinspace{}
+\end_inset
+
+in!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Your Name
+\end_layout
+
+\end_inset
+
+ All about you and the what your interests are.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Biography without photo
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Coauthor
+\end_layout
+
+\end_inset
+
+Same again for the co-author, but without photo
+\end_layout
+
+\end_body
+\end_document

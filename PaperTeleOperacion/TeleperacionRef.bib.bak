@@ -1,0 +1,37 @@
+% Encoding: UTF-8
+
+@Article{goncalves2005desarrollo,
+  author  = {Goncalves, Matias},
+  title   = {Desarrollo de un Nuevo Modelo de Estimaci{\'o}n Basado en Metodolog{\'\i}a {\'A}gil de Desarrollo y Generadores de Aplicaciones},
+  journal = {Universidad de Mor{\'o}n},
+  year    = {2005},
+}
+
+@Book{sommerville2005ingenieria,
+  title     = {Ingenier{\'\i}a del software},
+  publisher = {Pearson Educaci{\'o}n},
+  year      = {2005},
+  author    = {Sommerville, Ian and Galipienso, Mar{\'\i}a Isabel Alfonso},
+}
+
+@InCollection{scrum,
+  author    = {Schwaber, Ken},
+  title     = {Scrum development process},
+  booktitle = {Business Object Design and Implementation},
+  publisher = {Springer},
+  year      = {1997},
+  pages     = {117--134},
+}
+
+@Article{extreme,
+  author    = {Lindstrom, Lowell and Jeffries, Ron},
+  title     = {Extreme programming and agile software development methodologies},
+  journal   = {Information systems management},
+  year      = {2004},
+  volume    = {21},
+  number    = {3},
+  pages     = {41--52},
+  publisher = {Taylor \& Francis},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

@@ -1,4 +1,3 @@
-% This file was created with JabRef 2.10.
 % Encoding: UTF-8
 
 
@@ -48,5 +47,63 @@
   Year                     = {2005}
 }
 
-@comment{jabref-meta: databaseType:bibtex;}
+@Article{servicioTele,
+  author  = {{\'A}lvarez, B{\'a}rbara and Ortiz, Francisco and Pastor, Juan A and S{\'a}nchez, Pedro and Losilla, Fernando and Ortega, Noelia},
+  title   = {Arquitectura para Control de Robots de Servicio Teleoperados},
+  journal = {RIAII},
+  year    = {2006},
+  volume  = {3},
+  number  = {2},
+  pages   = {79--89},
+}
 
+@Article{canos2003metodologias,
+  author  = {Can{\'o}s, Jos{\'e} H and Letelier, Patricio and Penad{\'e}s, M{\textordfeminine} Carmen},
+  title   = {Metodolog{\'\i}as {\'a}giles en el desarrollo de software},
+  journal = {Metodolog{\'\i}as {\'A}giles en el Desarrollo de Software},
+  year    = {2003},
+  pages   = {1},
+}
+
+@Article{Json,
+  author  = {Chanch{\'\i}, Gabriel E and Campo, Wilmar Y and Amaya, Juan P and Arciniegas, Jos{\'e} L},
+  title   = {Esquema de servicios para Televisi{\'o}n Digital Interactiva, basados en el protocolo REST-JSON},
+  journal = {Cadernos de Inform{\'a}tica},
+  year    = {2011},
+  volume  = {6},
+  number  = {1},
+  pages   = {233--240},
+}
+
+@Article{Json2,
+  author  = {O'reilly, Tim},
+  title   = {What is Web 2.0: Design patterns and business models for the next generation of software},
+  journal = {Communications \& strategies},
+  number  = {1},
+  pages   = {17},
+}
+
+@InCollection{phpwebsocket,
+  author    = {Casario, Marco and Elst, Peter and Brown, Charles and Wormser, Nathalie and Hanquez, Cyril},
+  title     = {HTML5 WebSocket},
+  booktitle = {HTML5 Solutions: Essential Techniques for HTML5 Developers},
+  publisher = {Springer},
+  year      = {2011},
+  pages     = {241--261},
+}
+
+@Article{Streaming,
+  author   = {Esequiel Zavala Huavel y Lita Soto Nieto y Luis Martínez Ulloa y Henry Vivanco Urco},
+  title    = {Streaming de Video en Vivo por Internet},
+  journal  = {Electrónica - UNMSM},
+  year     = {2014},
+  volume   = {0},
+  number   = {27},
+  pages    = {36--43},
+  abstract = {El streaming se refiere a la entrega de flujos de datos, generalmente con contenidos multimedia. Ello trae ventajas que no son posibles utilizando procedimientos comunes de descarga de ficheros. Así como se realiza el streaming de contenidos estáticos, puede realizarse el Streaming de contenido en vivo.},
+  issn     = {1609-9087},
+  keywords = {streaming en vivo; video; códec; contenedor; multimedia; Firewire; webcam; plataforma de enseñanza; videolan; VLC},
+  url      = {http://revistasinvestigacion.unmsm.edu.pe/index.php/electron/article/view/3056},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

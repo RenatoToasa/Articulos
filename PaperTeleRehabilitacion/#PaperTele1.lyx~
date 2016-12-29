@@ -929,7 +929,7 @@ Cierra la conexión con el servidor.
 
 \begin_deeper
 \begin_layout Itemize
-Server.bind('close', function( data ) -
+Server.bind('close', function( data ) - 
 \end_layout
 
 \end_deeper

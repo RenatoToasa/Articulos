@@ -145,7 +145,7 @@ http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
 \end_layout
 
 \begin_layout Title
-PLATAFORMA WEB DE COMUNICACIÓN EN TIEMPO REAL PARA TELE-REHABILITACIÓN
+Plataforma Web de Comunicación en Tiempo Real para Tele-rehabilitación
 \end_layout
 
 \begin_layout Author
@@ -304,13 +304,24 @@ Fax: (888) 555--5555
 \end_layout
 
 \begin_layout Abstract
-En este trabajo se describe como desarrollar una plataforma de comunicación
- en tiempo real enfocada en tele-rehabilitación, detallando le protocolo
- de comunicación a utilizar, desarrollando una animación 3d y mediante una
- camará transmitir el streaming del paciente que será visualizada en una
- página web y finalmente capturando los movimientos de la persona que este
- realizando rehabilitación , esto mediante con un dispositivo segun las
- necesidades del paciente.
+\paragraph_spacing onehalf
+En este trabajo se describe el desarrollo de una plataforma de tele-rehabilitaci
+ón en tiempo real, se propone el uso del protocolo de comunicación bidirecciónal
+ Websocket para la comunicación entre el sitio local y remoto, JSON para
+ estructuración de los datos, Webrtc para la transmisión de audio y video
+ y finalmente Unity para construir un modelo 3D.
+ 
+\end_layout
+
+\begin_layout Abstract
+\paragraph_spacing onehalf
+En este contexto el paciente recibe los movimientos que son realizados en
+ el sitio remoto por el especialista através de un dispositivo de retroalimentac
+ión, en este proyecto se utiliza el dispositivo haptico Novint Falcon.
+ En cambio el especialista recibe el stream de video que transmite el paciente
+ y un modelo 3D que refleja los movimientos reales del paciente.
+ Por último, los resultados experimentales son reportados para verificar
+ el funcionamiento del sistema propuesto.
 \end_layout
 
 \begin_layout Keywords
@@ -318,7 +329,23 @@ Tele-Rehabilitación, 3d, Protocolos, websocket, Json, cliente, servidor
 \end_layout
 
 \begin_layout Section
-INTRODUCCIÓN
+Introducción 
+\end_layout
+
+\begin_layout Standard
+El aumento de la demanda de programas de rehabilitación en la mayoría de
+ países de nuestro entorno se debe tanto al incremento de la longevidad
+ de la población, como al creciente número de individuos que presentan algún
+ grado de discapacidad como resultado de múltiples procesos patológicos.
+ La telerehabilitación se presenta como una alternativa útil y accesible
+ desde el punto de vista tecnológico y económico
+\begin_inset CommandInset citation
+LatexCommand cite
+key "enhancing"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -332,12 +359,13 @@ key "rehabilitacion"
 
 \end_inset
 
- .
+.
  La telerehabilitación permite, entre otras cosas, minimizar los desplazamientos
  de pacientes y profesionales en rehabilitación, lo que conlleva a una mejora
  en las condiciones de atención para pacientes que se encuentran en zonas
  rurales o zonas de difícil acceso, como también la de los pacientes que
  por su condición no pueden movilizarse en áreas urbanas.
+ La figura 1 muestra el esquema general de la plataforma de tele-rehabilitación.
 \end_layout
 
 \begin_layout Standard
@@ -360,15 +388,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Esquema de la Plataforma
+Esquema de Plataforma Tele-rehabilitación
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -378,20 +402,28 @@ Esquema de la Plataforma
 \end_layout
 
 \begin_layout Standard
-Los autores M.
+Existen pocos estudios sobre plataformas de tele-rehabilitación, pero entre
+ las que mas impacto social han generado estan: Biomechanical motion capture
+ methods focused on tele-physiotherapy de los autores M.
  Callejas Cuervo, A.
  F.
  Ruiz Olaya, R.
  M.
- Gutiérrez Salamanca, realizan un esquema en Tele-fisioterapia para personas
- con trastornos motores del miembro superior, en cambio los autores García-Molin
-a A, Gómez A, Rodríguez P, Sánchez-Carrión R, realizan un Programa clínico
- de telerrehabilitación cognitiva en el traumatismo craneoencefálico.
+ Gutiérrez Salamanca, en la cual realizan un esquema en Tele-fisioterapia
+ para personas con trastornos motores del miembro superior
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tele-fisioterapia"
+
+\end_inset
+
+, en cambio el autor T.Rovira realiza un programa clínico de tele-rehabilitación
+ cognitiva en el traumatismo craneoencefálico.
 \end_layout
 
 \begin_layout Standard
 El trabajo que genera este artículo muestra el uso de las TICs para implementar
- un modelo de telerehabilitación del brazo, para ser mas específicos de
+ un modelo de tele-rehabilitación del brazo, para ser mas específicos de
  los daños que se ocacionan en las muñecas de la mano, permitiendo asegurar
  la transferencia de información entre los profesionales de la rehabilitación
  y las personas que necesiten rehabilitación.
@@ -399,17 +431,14 @@ El trabajo que genera este artículo muestra el uso de las TICs para implementar
 \end_layout
 
 \begin_layout Standard
-Este trabajo se encuantra dividido de la siguiente manera, la sección 1
+Este trabajo se encuentra dividido de la siguiente manera, la sección 2
  describe el dispositivo de retroalimentación que se va a utilizar, la sección
- 2 detalla un modelo 3D de la mano, en la sección 3 se muestra el desarrollo
- plataforma de comunicación, la sección 4 muestra la implementación de streaming
- en tiempo real, Un visualizador de datos web en tiempo real se muestra
- en la sección 5, en la sección 6 se muestran los resultados obtenidos y
- finalmente en la sección 7 estan las conclusiones del presente trabajo.
-\end_layout
-
-\begin_layout Standard
-
+ 3 muestra lqa informacion sobre Modelo 3D, en la sección 4 se muestra el
+ desarrollo plataforma de comunicación, la sección 5 muestra la implementación
+ de streaming en tiempo real, Un visualizador de datos web en tiempo real
+ se muestra en la sección 6, en la sección 7 se muestran los resultados
+ obtenidos y finalmente en la sección 8 estan las conclusiones y trabajo
+ futuro.
 \end_layout
 
 \begin_layout Section
@@ -480,15 +509,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Falcon Novint
+a) Estación de trabajo de transmision y recepción.
+ b)Falcon Novint
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -504,18 +530,18 @@ Se captura los datos que muestre el Novint Falcon en tiempo real, y se los
 \end_layout
 
 \begin_layout Section
-MODELO 3D
+Modelo 3D
 \end_layout
 
 \begin_layout Standard
-En computación, un modelo en 3D es un "mundo conceptual en tres dimensiones".Un
- modelo 3D puede "verse" de dos formas distintas.
+En computación, un modelo en 3D es un "mundo conceptual en tres dimensiones".
+ Un modelo 3D puede "verse" de dos formas distintas.
  Desde un punto de vista técnico, es un grupo de fórmulas matemáticas que
- describen un "mundo" en tres dimensiones.Desde un punto de vista visual,
- valga la redundancia, un modelo en 3D es un representación esquemática
- visible a través de un conjunto de objetos, elementos y propiedades que,
- una vez procesados, se convertirán en una imagen en 3D o una animación
- 3d
+ describen un "mundo" en tres dimensiones.
+ Desde un punto de vista visual, valga la redundancia, un modelo en 3D es
+ un representación esquemática visible a través de un conjunto de objetos,
+ elementos y propiedades que, una vez procesados, se convertirán en una
+ imagen en 3D o una animación 3d
 \begin_inset CommandInset citation
 LatexCommand cite
 key "3d"
@@ -536,13 +562,16 @@ En la actualidad debido a los avances tecnológicos, la medicina requiere
 El modelo 3D es desarrollado en Unity con las funciones necesarias para
  capturar los datos que envia el falcon Novint y realizar el mismo movimiento
  que hace la mano en tiempo real.
- Una vez terminado el modelo se exporta en formato webGl para poder utilizarlo
- en una página Wew.
+ Una vez terminado el modelo se exporta en formato WebGl con el fin de poder
+ visualizarlo en una pagina web.
 \end_layout
 
 \begin_layout Standard
-Al Modelo WebGl, se le añade la funcionalidad de un cliente websocket, para
- poder transmitir los datos en tiempo real.
+Al Modelo WebGl, se le añade la funcionalidad de un cliente websocket, en
+ nuestro caso similar al visualizador web que se explica mas adelante, esto
+ se hace para poder transmitir los datos en tiempo real desde sitio local
+ al sitio remoto, la figura 3 muestra el modelo 3D que se utiliza para replicar
+ el movimiento del paciente.
  
 \end_layout
 
@@ -552,10 +581,6 @@ placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -584,7 +609,7 @@ Modelo 3D
 \end_layout
 
 \begin_layout Section
-DESARROLLO DE LA PLATAFORMA DE COMUNICACIÓN
+Plataforma de Comunicación
 \end_layout
 
 \begin_layout Standard
@@ -594,7 +619,7 @@ La plataforma de comunicación está desarrollada en php, utilizando la librerí
  de comunicación
 \begin_inset CommandInset citation
 LatexCommand cite
-key "PHPwebsocket"
+key "websocketChanel"
 
 \end_inset
 
@@ -610,15 +635,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename esquema-servidor.jpg
-	width 6cm
-	height 6cm
+	width 8cm
+	height 8cm
 
 \end_inset
 
@@ -705,7 +726,7 @@ return $this->socket->wsStartServer ('192.168.1.102',9300);
 
 \end_deeper
 \begin_layout Section
-STREAM DE VIDEO
+Stream de audio y video
 \end_layout
 
 \begin_layout Standard
@@ -741,7 +762,7 @@ key "webrtc"
 
 \end_inset
 
-.
+, la arquitectura de funcionamiento se muestra en la figura 5.
  
 \end_layout
 
@@ -753,15 +774,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename stream.jpg
-	width 6cm
-	height 3cm
+	filename webrtc-public-diagram-for-website.png
+	width 9cm
+	height 8cm
 
 \end_inset
 
@@ -769,15 +786,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Stream de video
+Arquitectura WebRTC de: https://webrtc.org/
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -787,7 +800,7 @@ Stream de video
 \end_layout
 
 \begin_layout Section
-DESARROLLO DEL CLIENTE
+Visualizador Web
 \end_layout
 
 \begin_layout Standard
@@ -797,9 +810,16 @@ Se creó una página web que mostrará los datos enviados por los clientes,
  misma.
  La aplicación cliente, es decir el websocket cliente está escrito en javascript
  y jquery, en esta parte también se utiliza una librería que contiene los
- métodos para conectarse a un websocket server.
+ métodos para conectarse a un websocket server 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "websocket"
+
+\end_inset
+
+.
  Esta librería se llama fancywebsocket, de la misma manera tiene los métodos
- open, message, close, el esquema se muestra en la figura 8.
+ open, message, close, el esquema se muestra en la figura 6.
 \end_layout
 
 \begin_layout Standard
@@ -813,8 +833,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename esquema-cliente.jpg
-	width 6cm
-	height 6cm
+	width 8cm
+	height 8cm
 
 \end_inset
 
@@ -894,17 +914,17 @@ Server.bind('message', function( payload ); var res = jQuery.parseJSON(payload);
 
 \end_deeper
 \begin_layout Section
-RESULTADOS
+Resultados
 \end_layout
 
 \begin_layout Subsection
-Servidor
+Servicio de Comunicación 
 \end_layout
 
 \begin_layout Standard
-Se tiene un servidor que cuando inicia el websocket esta en espera de los
- clientes que se van a conectar y brinda la comunicación full-duplex, La
- figura 9 describe el servidor.
+Se tiene un servidor apache 2.0 en el cual se debe iniciar servicio websocket
+ esta en espera de los clientes que se van a conectar y brinda la comunicación
+ full-duplex.
  Se inicia atraves de línea de comandos en terminal linux en nuestro caso,
  para esto se hace lo siguiente: 
 \end_layout
@@ -915,8 +935,8 @@ eoperacion-Bilateral/.
 \end_layout
 
 \begin_layout Itemize
-Escribir el comando para iniciar el servidor websocker, En la siguiente
- figura se detalla los servicios que se inician.
+Escribir el comando para iniciar el servicio websocker, la figura 7 detalla
+ los servicios que se inician.
  php index.php Administrador/iniciar_socket.
  
 \end_layout
@@ -929,15 +949,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename comunicacion-clientes-servidor.jpg
-	width 6cm
-	height 5cm
+	filename Iniciarsocket.png
+	width 9cm
+	height 2.5cm
 
 \end_inset
 
@@ -945,7 +960,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comunicación Clientes - Servidor
+Inicar Websocket
 \end_layout
 
 \end_inset
@@ -959,14 +974,14 @@ Comunicación Clientes - Servidor
 \end_layout
 
 \begin_layout Subsection
-Cliente
+Visualizador Web
 \end_layout
 
 \begin_layout Standard
-En cuanto al cliente web, Conectar el cliente abriendo un navegador web
- especificando la dirección del servidor, en este caso se trabaja en un
- servidor local, se muestra en la figura 10 http://127.0.0.1Teleoperacion-Bilateral
-/Administrador/g 
+En cuanto al visualizador web, Conectar el cliente abriendo un navegador
+ web especificando la dirección del servidor, en este caso se trabaja en
+ un servidor local, como se muestra en la figura 8 http://190.15.141.9/Teleoperacio
+n-Bilateral/Administrador/g 
 \end_layout
 
 \begin_layout Standard
@@ -977,14 +992,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename clienteWeb.jpg
-	width 7cm
+	filename Screenshot_1.png
+	width 9cm
 	height 5cm
 
 \end_inset
@@ -1015,7 +1026,7 @@ Comunicación Bidireccional
 
 \begin_layout Itemize
 La primera conexión permite identificar al servidor que cliente se conecta,
- como se puede ver en la figura 11.
+ como se puede ver en la figura 9.
 \end_layout
 
 \begin_layout Itemize
@@ -1035,10 +1046,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename identificacion.jpg
@@ -1056,10 +1063,6 @@ Identificación de clientes
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1088,10 +1091,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename redireccionamieto.jpg
@@ -1115,36 +1114,39 @@ Redireccionamiento
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Section
-CONCLUSIONES
+Conclusiones y Trabajo Futuro
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 Se utilizó el protocolo de comunicación webocket, debido a que brinda una
  comunicación estable, full duplex y con un tiempo de respuesta mínimo.
  
 \end_layout
 
-\begin_layout Itemize
-El framework codeigniter ofrece un modelo vista controlador, de modo que
- facilitó la programación de las aplicaciones con las que se está trabajando.
- 
-\end_layout
-
-\begin_layout Itemize
+\begin_layout Standard
 Es necesario empaquetar los datos en formato Json para poder utilizar cada
  campo de la cadena que se crea, permitiendo tener el control de los datos
  que entran y salen del servidor.
  
+\end_layout
+
+\begin_layout Standard
+La animación en 3D en tiempo real de sistemas redundantes permite tener
+ un conocimiento de las diferentes posiciones de las articulaciones de la
+ mano, ayudando a realizas las tareas de mejor manera.
+\end_layout
+
+\begin_layout Standard
+Una vez se tiene funcionando correctamentemente la plataforma de tele-rehabilita
+ción, se puede realizar funciones para almacenar los datos que envia el
+ paciente, con el fin de ser analizados y verificar que la plataforma funciona
+ de manera eficiente o si necesita algun cambio en su estructura o programación.
 \end_layout
 
 \begin_layout Section*
